@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.profile {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 3px solid #e2e8f0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1a202c;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #4a5568;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #2d3748;
+    background-color: #f7fafc;
+}
+
+/* Main Content */
+main {
+    margin-bottom: 4rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #1a202c;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+.section-desc {
+    color: #4a5568;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+/* About Section */
+.about p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    max-width: 700px;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    margin-bottom: 1rem;
+}
+
+.project-card h3 a {
+    color: #2d3748;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-card h3 a:hover {
+    color: #4299e1;
+}
+
+.project-card p {
+    color: #4a5568;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.tech-stack {
+    font-size: 0.85rem;
+    color: #718096;
+    font-weight: 500;
+}
+
+/* Experiment Grid */
+.experiment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.experiment-card {
+    background: #fefefe;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid #4299e1;
+}
+
+.experiment-card h3 {
+    margin-bottom: 0.8rem;
+}
+
+.experiment-card h3 a {
+    color: #2d3748;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.experiment-card h3 a:hover {
+    color: #4299e1;
+}
+
+.experiment-card p {
+    color: #4a5568;
+    font-size: 0.95rem;
+}
+
+/* Learning Grid */
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.learning-card {
+    background: #f0fff4;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid #48bb78;
+}
+
+.learning-card h3 {
+    margin-bottom: 0.8rem;
+}
+
+.learning-card h3 a {
+    color: #2d3748;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.learning-card h3 a:hover {
+    color: #48bb78;
+}
+
+.learning-card p {
+    color: #4a5568;
+    font-size: 0.95rem;
+}
+
+/* Research Section */
+.research-item {
+    background: #fffaf0;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #ed8936;
+    margin-bottom: 2rem;
+}
+
+.research-item h3 {
+    color: #1a202c;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.research-item p {
+    color: #4a5568;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.repo-link {
+    color: #ed8936;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.repo-link:hover {
+    color: #c05621;
+}
+
+/* Experience Section */
+.experience-item {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border-left: 4px solid #805ad5;
+}
+
+.exp-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.exp-header h3 {
+    color: #1a202c;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.company {
+    color: #805ad5;
+    font-weight: 600;
+}
+
+.duration {
+    color: #718096;
+    font-size: 0.9rem;
+    margin-left: auto;
+}
+
+.experience-item p {
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+/* Blog Section */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.blog-card {
+    background: #f0f4f8;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3182ce;
+}
+
+.blog-card h3 {
+    margin-bottom: 1rem;
+}
+
+.blog-card h3 a {
+    color: #2d3748;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.blog-card h3 a:hover {
+    color: #3182ce;
+}
+
+.blog-card p {
+    color: #4a5568;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.status {
+    background: #fed7d7;
+    color: #c53030;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid #e2e8f0;
+    color: #718096;
+}
+
+footer a {
+    color: #4a5568;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #2d3748;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1.1rem;
+    }
+    
+    .social-links {
+        gap: 1rem;
+    }
+    
+    .project-grid,
+    .experiment-grid,
+    .learning-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .duration {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
