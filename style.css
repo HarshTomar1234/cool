@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
@@ -24,7 +24,7 @@ header {
 }
 
 .profile {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -46,8 +46,15 @@ h1 {
 .tagline {
     font-size: 1.2rem;
     color: #4a5568;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-weight: 400;
+}
+
+.bio {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    line-height: 1.7;
 }
 
 .social-links {
@@ -77,7 +84,7 @@ main {
 }
 
 section {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 h2 {
@@ -91,18 +98,143 @@ h2 {
 
 .section-desc {
     color: #4a5568;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     font-style: italic;
 }
 
-/* About Section */
-.about p {
-    font-size: 1.1rem;
-    color: #4a5568;
-    max-width: 700px;
+/* Detailed Project Cards */
+.project-detailed {
+    background: #f8fafc;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 3rem;
+    transition: all 0.3s ease;
 }
 
-/* Project Grid */
+.project-detailed:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-header h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.project-header h3 a {
+    color: #2d3748;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-header h3 a:hover {
+    color: #4299e1;
+}
+
+.project-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.stars, .year {
+    font-size: 0.9rem;
+    color: #718096;
+    font-weight: 500;
+}
+
+.project-summary {
+    color: #4a5568;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.project-image {
+    margin: 2rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tech-details {
+    margin: 2rem 0;
+}
+
+.tech-details h4 {
+    color: #2d3748;
+    font-size: 1.1rem;
+    margin: 1.5rem 0 1rem 0;
+    font-weight: 600;
+}
+
+.tech-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tech-details li {
+    color: #4a5568;
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.7;
+}
+
+.tech-details li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #4299e1;
+    font-weight: bold;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.metric {
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.metric-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4299e1;
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    display: block;
+    font-size: 0.85rem;
+    color: #718096;
+    font-weight: 500;
+}
+
+/* Regular Project Grid */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -140,112 +272,60 @@ h2 {
     color: #4a5568;
     margin-bottom: 1rem;
     font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .tech-stack {
     font-size: 0.85rem;
     color: #718096;
     font-weight: 500;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
 }
 
-/* Experiment Grid */
-.experiment-grid {
+/* Skills Section */
+.skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
-.experiment-card {
-    background: #fefefe;
+.skill-category {
+    background: #f8fafc;
     padding: 1.5rem;
-    border-radius: 6px;
+    border-radius: 8px;
     border-left: 4px solid #4299e1;
 }
 
-.experiment-card h3 {
-    margin-bottom: 0.8rem;
-}
-
-.experiment-card h3 a {
+.skill-category h3 {
     color: #2d3748;
-    text-decoration: none;
-    font-weight: 600;
     font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
-.experiment-card h3 a:hover {
-    color: #4299e1;
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
-.experiment-card p {
+.skill-tags span {
+    background: white;
     color: #4a5568;
-    font-size: 0.95rem;
-}
-
-/* Learning Grid */
-.learning-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-}
-
-.learning-card {
-    background: #f0fff4;
-    padding: 1.5rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 6px;
-    border-left: 4px solid #48bb78;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
 }
 
-.learning-card h3 {
-    margin-bottom: 0.8rem;
-}
-
-.learning-card h3 a {
-    color: #2d3748;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-.learning-card h3 a:hover {
-    color: #48bb78;
-}
-
-.learning-card p {
-    color: #4a5568;
-    font-size: 0.95rem;
-}
-
-/* Research Section */
-.research-item {
-    background: #fffaf0;
-    padding: 2rem;
-    border-radius: 8px;
-    border-left: 4px solid #ed8936;
-    margin-bottom: 2rem;
-}
-
-.research-item h3 {
-    color: #1a202c;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-}
-
-.research-item p {
-    color: #4a5568;
-    margin-bottom: 1rem;
-    line-height: 1.7;
-}
-
-.repo-link {
-    color: #ed8936;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-}
-
-.repo-link:hover {
-    color: #c05621;
+.skill-tags span:hover {
+    background: #4299e1;
+    color: white;
+    border-color: #4299e1;
 }
 
 /* Experience Section */
@@ -285,6 +365,81 @@ h2 {
 .experience-item p {
     color: #4a5568;
     line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.achievements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.achievement {
+    background: white;
+    color: #805ad5;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+}
+
+/* Achievements Section */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-4px);
+}
+
+.achievement-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-label {
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+/* Education Section */
+.education-item {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #48bb78;
+}
+
+.education-item h3 {
+    color: #1a202c;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.institution {
+    color: #48bb78;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.coursework {
+    color: #4a5568;
+    line-height: 1.7;
+    margin-top: 1rem;
 }
 
 /* Blog Section */
@@ -319,6 +474,7 @@ h2 {
     color: #4a5568;
     margin-bottom: 1rem;
     font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .status {
@@ -365,9 +521,22 @@ footer a:hover {
         gap: 1rem;
     }
     
+    .project-detailed {
+        padding: 1.5rem;
+    }
+    
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .project-grid,
-    .experiment-grid,
-    .learning-grid,
+    .skills-grid,
+    .achievements-grid,
     .blog-grid {
         grid-template-columns: 1fr;
     }
@@ -395,5 +564,13 @@ footer a:hover {
     .social-links {
         flex-direction: column;
         gap: 0.5rem;
+    }
+    
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .achievement-number {
+        font-size: 2rem;
     }
 }
