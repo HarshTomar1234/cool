@@ -29,6 +29,63 @@
                 <h2>Featured Projects</h2>
                 <p class="section-desc">Production-ready AI systems with comprehensive technical implementations</p>
                 
+                <!-- QuantaAI -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/QuantaAI" target="_blank">QuantaAI</a></h3>
+                        <div class="project-meta">
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    
+                    <p class="project-summary">Intelligent conversational AI with real-time web search capabilities powered by LangGraph for agentic decision-making, GPT-4 for responses, and Next.js for modern UI. Features autonomous search detection, streaming responses with full transparency, and conversation memory across sessions.</p>
+                    
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/QuantaAI/main/assets/images/chat_interface.png" alt="QuantaAI Chat Interface">
+                    </div>
+                    
+                    <div class="tech-details">
+                        <h4>LangGraph Architecture</h4>
+                        <ul>
+                            <li><strong>State Machine Design:</strong> Cyclical graph-based workflow with Model Node, Tool Node, and conditional routing for intelligent decision-making</li>
+                            <li><strong>Autonomous Search Detection:</strong> GPT-4 powered analysis determines when web search is required vs direct responses</li>
+                            <li><strong>Tool Integration:</strong> Tavily Search API integration with structured result processing and context injection</li>
+                            <li><strong>Memory Management:</strong> LangGraph MemorySaver with thread-based checkpointing for persistent conversation state</li>
+                            <li><strong>Streaming Protocol:</strong> Server-Sent Events (SSE) enabling real-time token streaming and search stage visualization</li>
+                        </ul>
+                        
+                        <h4>Technical Implementation</h4>
+                        <ul>
+                            <li><strong>Frontend:</strong> Next.js 15.3 with React 19, TypeScript 5, TailwindCSS 4 for modern responsive UI</li>
+                            <li><strong>Backend:</strong> FastAPI with async/await support, automatic OpenAPI documentation, Pydantic validation</li>
+                            <li><strong>AI Pipeline:</strong> LangGraph + LangChain for stateful agentic workflows with cyclical graph execution</li>
+                            <li><strong>Search Transparency:</strong> Real-time visualization of search stages (Searching, Reading, Writing) with query and URL display</li>
+                            <li><strong>Response Quality:</strong> Context-aware synthesis of multiple web sources with markdown rendering and code highlighting</li>
+                        </ul>
+                        
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">GPT-4</span>
+                                <span class="metric-label">LLM Model</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">SSE</span>
+                                <span class="metric-label">Streaming Protocol</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Real-time</span>
+                                <span class="metric-label">Search Integration</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Stateful</span>
+                                <span class="metric-label">Conversation Memory</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-stack">Next.js • React • TypeScript • FastAPI • LangGraph • LangChain • GPT-4 • Tavily API</div>
+                </div>
+
                 <!-- Tennis Vision -->
                 <div class="project-detailed">
                     <div class="project-header">
@@ -87,6 +144,139 @@
                     <div class="tech-stack">PyTorch • OpenCV • YOLOv8 • Supervision • ResNet-50</div>
                 </div>
 
+                <!-- RAGify -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/RAGify" target="_blank">RAGify</a></h3>
+                        <div class="project-meta">
+                            <span class="stars">⭐ 1</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    
+                    <p class="project-summary">Comprehensive hub for Retrieval-Augmented Generation (RAG) solutions showcasing the synergy between retrieval mechanisms and generative AI. From-scratch implementation of RAG pipeline with vector databases, semantic search, and context-aware response generation.</p>
+                    
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/RAGify/main/RAG/simple-local-rag-workflow-flowchart.png" alt="RAG Workflow Architecture">
+                    </div>
+                    
+                    <div class="tech-details">
+                        <h4>RAG Pipeline Architecture</h4>
+                        <ul>
+                            <li><strong>Document Processing:</strong> Text chunking with semantic splitting, overlap management, and metadata preservation for optimal retrieval</li>
+                            <li><strong>Embedding Generation:</strong> Sentence transformers for dense vector representations with 384-dimensional embeddings</li>
+                            <li><strong>Vector Storage:</strong> FAISS index for efficient similarity search with cosine distance metrics</li>
+                            <li><strong>Retrieval System:</strong> Top-k similarity search with relevance scoring and context window optimization</li>
+                            <li><strong>Context Injection:</strong> Dynamic prompt construction with retrieved documents and query reformulation</li>
+                            <li><strong>Response Generation:</strong> LLM integration with context-aware prompting for accurate, grounded responses</li>
+                        </ul>
+                        
+                        <h4>Implementation Details</h4>
+                        <ul>
+                            <li>Built from scratch without high-level RAG frameworks to understand core mechanisms</li>
+                            <li>Jupyter notebook with step-by-step implementation and detailed explanations</li>
+                            <li>Demonstrates document loading, chunking strategies, embedding creation, and retrieval</li>
+                            <li>Includes visualization of RAG workflow and component interactions</li>
+                            <li>Extensible architecture for custom retrieval strategies and ranking algorithms</li>
+                        </ul>
+                        
+                        <h4>Applications Demonstrated</h4>
+                        <ul>
+                            <li>Intelligent chatbots with knowledge base grounding</li>
+                            <li>Document search and summarization systems</li>
+                            <li>Question-answering over large document repositories</li>
+                            <li>Context-aware content generation</li>
+                        </ul>
+                        
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">384D</span>
+                                <span class="metric-label">Embedding Dimension</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">FAISS</span>
+                                <span class="metric-label">Vector Database</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Semantic</span>
+                                <span class="metric-label">Search Type</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">From Scratch</span>
+                                <span class="metric-label">Implementation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-stack">Python • LangChain • FAISS • Sentence Transformers • Vector Databases • RAG</div>
+                </div>
+
+                <!-- TinderMuse -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/tindermuse" target="_blank">TinderMuse</a></h3>
+                        <div class="project-meta">
+                            <span class="stars">⭐ 1</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    
+                    <p class="project-summary">AI-powered profile picture enhancement application using Google's Gemini 2.5 Flash model for dating applications. Streamlit-based web interface enabling prompt-driven photo transformations with professional polish, background modifications, and artistic enhancements.</p>
+                    
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/tindermuse/master/images/tindermuse_interface.png" alt="TinderMuse Interface">
+                    </div>
+                    
+                    <div class="tech-details">
+                        <h4>AI Image Enhancement Pipeline</h4>
+                        <ul>
+                            <li><strong>Model Integration:</strong> Google Gemini 2.5 Flash Image Preview model for high-quality photo transformations</li>
+                            <li><strong>Prompt Engineering:</strong> Text-based control for lighting, background, style, and aesthetic modifications</li>
+                            <li><strong>Image Processing:</strong> Support for JPG, JPEG, PNG formats with automatic quality optimization</li>
+                            <li><strong>Enhancement Capabilities:</strong> Professional polish, background replacement, lighting adjustment, artistic filters</li>
+                            <li><strong>Privacy-First Design:</strong> Session-based processing with no server-side image storage</li>
+                        </ul>
+                        
+                        <h4>Technical Features</h4>
+                        <ul>
+                            <li><strong>Streamlit Interface:</strong> Clean, intuitive web UI with side-by-side comparison view</li>
+                            <li><strong>Real-time Processing:</strong> 15-45 second generation time with progress indicators</li>
+                            <li><strong>Secure API Integration:</strong> Session-based Google AI API key management</li>
+                            <li><strong>Transformation Types:</strong> Professional headshots, environmental enhancements, artistic styles, lighting improvements</li>
+                            <li><strong>Quality Control:</strong> Maintains natural appearance while enhancing visual appeal</li>
+                        </ul>
+                        
+                        <h4>Use Cases</h4>
+                        <ul>
+                            <li>Dating profile optimization with professional-quality photos</li>
+                            <li>Background replacement for better visual context</li>
+                            <li>Lighting enhancement for flattering appearance</li>
+                            <li>Artistic style application for unique profiles</li>
+                        </ul>
+                        
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">Gemini 2.5</span>
+                                <span class="metric-label">AI Model</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">15-45s</span>
+                                <span class="metric-label">Processing Time</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Privacy</span>
+                                <span class="metric-label">No Storage</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Streamlit</span>
+                                <span class="metric-label">Web Framework</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-stack">Python • Streamlit • Google Gemini 2.5 • Image Generation • AI Enhancement</div>
+                </div>
+
                 <!-- Field Fusion -->
                 <div class="project-detailed">
                     <div class="project-header">
@@ -140,62 +330,12 @@
                     <div class="tech-stack">YOLOv8 • ByteTrack • OpenCV • K-means • Optical Flow • Scikit-learn</div>
                 </div>
 
-                <!-- MoleCuQuest -->
-                <div class="project-detailed">
-                    <div class="project-header">
-                        <h3><a href="https://github.com/HarshTomar1234/MoleCuQuest" target="_blank">MoleCuQuest</a></h3>
-                        <div class="project-meta">
-                            <span class="year">2025</span>
-                        </div>
-                    </div>
-                    
-                    <p class="project-summary">Full-stack platform connecting 200+ biologists and medical researchers for molecular research collaboration. ML-powered matching algorithms facilitate 50+ successful partnerships with 84% satisfaction rate.</p>
-                    
-                    <div class="tech-details">
-                        <h4>Platform Features</h4>
-                        <ul>
-                            <li><strong>Intelligent Matching:</strong> Cosine similarity and collaborative filtering algorithms achieving 84% match satisfaction</li>
-                            <li><strong>Research Integration:</strong> Connected to 5 major databases (PubMed, NCBI, UniProt, ResearchGate, Google Scholar)</li>
-                            <li><strong>Real-time Collaboration:</strong> WebSocket-based messaging and document sharing for 500+ active users</li>
-                            <li><strong>Profile Analytics:</strong> Automated researcher profiling with publication tracking and collaboration history</li>
-                        </ul>
-                        
-                        <h4>Technical Stack</h4>
-                        <ul>
-                            <li>React frontend with TypeScript for type-safe development</li>
-                            <li>FastAPI backend with async request handling</li>
-                            <li>MongoDB for flexible document storage and researcher profiles</li>
-                            <li>ML pipeline using scikit-learn for recommendation engine</li>
-                        </ul>
-                        
-                        <div class="metrics-grid">
-                            <div class="metric">
-                                <span class="metric-value">200+</span>
-                                <span class="metric-label">Active Researchers</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">84%</span>
-                                <span class="metric-label">Match Satisfaction</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">50+</span>
-                                <span class="metric-label">Partnerships</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">5</span>
-                                <span class="metric-label">Database APIs</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tech-stack">React • TypeScript • FastAPI • MongoDB • Scikit-learn • WebSocket</div>
-                </div>
-
                 <!-- Breast Cancer Predictor -->
                 <div class="project-detailed">
                     <div class="project-header">
                         <h3><a href="https://github.com/HarshTomar1234/BREAST-CANCER-STREAMLIT-APP" target="_blank">Breast Cancer Predictor</a></h3>
                         <div class="project-meta">
+                            <span class="stars">⭐ 1</span>
                             <span class="year">2024</span>
                         </div>
                     </div>
@@ -224,50 +364,65 @@
                                 <span class="metric-value">15%</span>
                                 <span class="metric-label">Robustness Gain</span>
                             </div>
+                            <div class="metric">
+                                <span class="metric-value">SHAP</span>
+                                <span class="metric-label">Explainability</span>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="tech-stack">Scikit-learn • XGBoost • Streamlit • SHAP • MLflow</div>
                 </div>
 
-                <!-- AgentForge -->
+                <!-- LLM Council -->
                 <div class="project-detailed">
                     <div class="project-header">
-                        <h3><a href="https://github.com/HarshTomar1234/AgentForge" target="_blank">AgentForge</a></h3>
+                        <h3><a href="https://github.com/HarshTomar1234/llm-council" target="_blank">LLM Council</a></h3>
                         <div class="project-meta">
-                            <span class="stars">⭐ 2</span>
                             <span class="year">2025</span>
                         </div>
                     </div>
                     
-                    <p class="project-summary">Comprehensive guide for building AI agents using CrewAI, LangGraph, and smolagents with 15+ hands-on examples. Orchestrator, explorer, and coder agents working collaboratively reduce development time by 60%.</p>
+                    <p class="project-summary">Multi-agent AI system where specialized LLM agents collaborate to answer complex questions. Implements debate-style reasoning with multiple perspectives, consensus building, and comprehensive answer synthesis for challenging queries.</p>
                     
                     <div class="tech-details">
-                        <h4>Framework Coverage</h4>
+                        <h4>Multi-Agent Architecture</h4>
                         <ul>
-                            <li><strong>CrewAI:</strong> Multi-agent orchestration with role-based task delegation</li>
-                            <li><strong>LangGraph:</strong> State machine-based agent workflows with conditional routing</li>
-                            <li><strong>Smolagents:</strong> Lightweight agent framework for rapid prototyping</li>
-                            <li><strong>Practical Examples:</strong> 15+ real-world implementations with detailed documentation</li>
+                            <li><strong>Agent Specialization:</strong> Multiple LLM agents with distinct roles (analyst, critic, synthesizer) for diverse perspectives</li>
+                            <li><strong>Collaborative Reasoning:</strong> Debate-style interaction where agents challenge and refine each other's responses</li>
+                            <li><strong>Consensus Mechanism:</strong> Voting and agreement protocols to reach well-reasoned conclusions</li>
+                            <li><strong>Answer Synthesis:</strong> Final agent combines insights from all perspectives into comprehensive response</li>
+                        </ul>
+                        
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Handles complex, multi-faceted questions requiring diverse expertise</li>
+                            <li>Reduces single-model bias through multi-agent deliberation</li>
+                            <li>Transparent reasoning process showing agent interactions</li>
+                            <li>Improved answer quality through collaborative refinement</li>
                         </ul>
                         
                         <div class="metrics-grid">
                             <div class="metric">
-                                <span class="metric-value">15+</span>
-                                <span class="metric-label">Examples</span>
+                                <span class="metric-value">Multi-Agent</span>
+                                <span class="metric-label">Architecture</span>
                             </div>
                             <div class="metric">
-                                <span class="metric-value">60%</span>
-                                <span class="metric-label">Time Reduction</span>
+                                <span class="metric-value">Debate</span>
+                                <span class="metric-label">Reasoning Style</span>
                             </div>
                             <div class="metric">
-                                <span class="metric-value">3</span>
-                                <span class="metric-label">Frameworks</span>
+                                <span class="metric-value">Consensus</span>
+                                <span class="metric-label">Decision Making</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Synthesis</span>
+                                <span class="metric-label">Answer Quality</span>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="tech-stack">CrewAI • LangGraph • LangChain • Smolagents • Python</div>
+                    <div class="tech-stack">Python • LangChain • Multi-Agent Systems • LLM Orchestration</div>
                 </div>
             </section>
 
@@ -275,51 +430,57 @@
                 <h2>Additional Projects</h2>
                 <div class="project-grid">
                     <div class="project-card">
-                        <h3><a href="https://github.com/HarshTomar1234/vision_transformer-ViT-" target="_blank">Vision Transformer (ViT)</a></h3>
-                        <p>PyTorch implementation of "An Image is Worth 16x16 Words" - revolutionary transformer architecture for computer vision achieving state-of-the-art image classification.</p>
-                        <div class="tech-stack">PyTorch • Transformers • Computer Vision</div>
+                        <h3><a href="https://github.com/HarshTomar1234/Multiple_Pdf_ChatApp" target="_blank">Multiple PDF Chat App</a></h3>
+                        <p>Conversational AI application for querying multiple PDF documents simultaneously using RAG architecture. Features semantic search, context-aware responses, and document source attribution.</p>
+                        <div class="tech-stack">LangChain • RAG • PDF Processing • Vector DB</div>
                     </div>
                     
                     <div class="project-card">
-                        <h3><a href="https://github.com/HarshTomar1234/PyTorch-LoRA-QLoRA" target="_blank">LoRA & QLoRA</a></h3>
-                        <p>Pure PyTorch implementations of Low-Rank Adaptation techniques for memory-efficient fine-tuning of large language models.</p>
-                        <div class="tech-stack">PyTorch • LoRA • LLM Fine-tuning</div>
+                        <h3><a href="https://github.com/HarshTomar1234/Google-Agent-Development-kit-ADK-" target="_blank">Google ADK Experiments</a></h3>
+                        <p>Exploration of Google's Agent Development Kit (ADK) for building intelligent agents with tool integration, function calling, and multi-step reasoning capabilities.</p>
+                        <div class="tech-stack">Google ADK • Agent Development • Function Calling</div>
                     </div>
                     
                     <div class="project-card">
-                        <h3><a href="https://github.com/HarshTomar1234/VLMverse" target="_blank">VLMverse</a></h3>
-                        <p>From-scratch implementations of vision-language models including PaLiGemma (SigLIP + Gemma) bridging computer vision and NLP.</p>
-                        <div class="tech-stack">PyTorch • Multimodal AI • Transformers</div>
+                        <h3><a href="https://github.com/HarshTomar1234/web-search-agent" target="_blank">Web Search Agent</a></h3>
+                        <p>Intelligent web search agent with query understanding, result ranking, and answer synthesis. Implements semantic search and multi-source information aggregation.</p>
+                        <div class="tech-stack">LangChain • Web Search • NLP • Information Retrieval</div>
                     </div>
                     
                     <div class="project-card">
-                        <h3><a href="https://github.com/HarshTomar1234/torchquest" target="_blank">PyTorch Quest</a></h3>
-                        <p>Deep dive into PyTorch from fundamentals to advanced techniques for mastering deep learning implementation.</p>
-                        <div class="tech-stack">PyTorch • Deep Learning • Neural Networks</div>
+                        <h3><a href="https://github.com/HarshTomar1234/LLMops" target="_blank">LLMOps</a></h3>
+                        <p>Comprehensive guide to LLM operations covering deployment, monitoring, maintenance, and improvement of LLM applications at scale. Production best practices and tooling.</p>
+                        <div class="tech-stack">MLOps • LLM Deployment • Monitoring • Production</div>
                     </div>
                     
                     <div class="project-card">
-                        <h3><a href="https://github.com/HarshTomar1234/RAGify" target="_blank">RAGify</a></h3>
-                        <p>Hub for Retrieval-Augmented Generation solutions showcasing synergy between retrieval mechanisms and generative AI.</p>
-                        <div class="tech-stack">RAG • LangChain • Vector Databases</div>
+                        <h3><a href="https://github.com/HarshTomar1234/cursor-agent" target="_blank">Cursor Agent</a></h3>
+                        <p>Python-based AI agent replicating Cursor's coding assistant capabilities with function calling, code generation, and intelligent coding assistance using Claude, OpenAI, and Ollama.</p>
+                        <div class="tech-stack">Python • AI Agents • Code Generation • Function Calling</div>
                     </div>
                     
                     <div class="project-card">
-                        <h3><a href="https://github.com/HarshTomar1234/Paper2Agent" target="_blank">Paper2Agent</a></h3>
-                        <p>Multi-agent AI system automatically transforming research papers into interactive AI agents with minimal human input.</p>
-                        <div class="tech-stack">Multi-Agent • NLP • Automation</div>
+                        <h3><a href="https://github.com/HarshTomar1234/reasoning-from-scratch" target="_blank">Reasoning from Scratch</a></h3>
+                        <p>Implementation of reasoning LLM in PyTorch from scratch, step by step. Explores chain-of-thought, tree-of-thought, and other reasoning mechanisms in language models.</p>
+                        <div class="tech-stack">PyTorch • Reasoning • LLM • From Scratch</div>
                     </div>
                     
                     <div class="project-card">
-                        <h3><a href="https://github.com/HarshTomar1234/InsureML-Pipeline" target="_blank">InsureML Pipeline</a></h3>
-                        <p>Production-ready MLOps pipeline featuring MongoDB Atlas, AWS services, Docker containerization, and CI/CD automation.</p>
-                        <div class="tech-stack">MLOps • AWS • Docker • CI/CD</div>
+                        <h3><a href="https://github.com/HarshTomar1234/Paper-Replications" target="_blank">Paper Replications</a></h3>
+                        <p>Repository of classic and SOTA AI/ML paper implementations in PyTorch. Includes architecture replications with detailed documentation and training scripts.</p>
+                        <div class="tech-stack">PyTorch • Research Papers • Deep Learning</div>
                     </div>
                     
                     <div class="project-card">
-                        <h3><a href="https://github.com/HarshTomar1234/Calendar-Voice-Assistant" target="_blank">Elena Calendar Assistant</a></h3>
-                        <p>Voice-powered Google Calendar management assistant using Google ADK for seamless event scheduling and management.</p>
-                        <div class="tech-stack">Google ADK • Voice AI • Calendar API</div>
+                        <h3><a href="https://github.com/HarshTomar1234/Machine-and-Deep-Learning-NLP" target="_blank">ML/DL/NLP Learning</a></h3>
+                        <p>Comprehensive collection of machine learning, deep learning, and NLP implementations covering fundamental algorithms to advanced architectures.</p>
+                        <div class="tech-stack">ML • DL • NLP • PyTorch • TensorFlow</div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3><a href="https://github.com/HarshTomar1234/dog-vs-cat-classifier" target="_blank">Dog vs Cat Classifier</a></h3>
+                        <p>CNN-based image classifier for binary classification with data augmentation, transfer learning, and model optimization techniques.</p>
+                        <div class="tech-stack">CNN • Transfer Learning • Image Classification</div>
                     </div>
                 </div>
             </section>
@@ -336,6 +497,8 @@
                             <span>Image Segmentation</span>
                             <span>Supervision</span>
                             <span>Optical Flow</span>
+                            <span>ResNet</span>
+                            <span>ByteTrack</span>
                         </div>
                     </div>
                     
@@ -348,6 +511,8 @@
                             <span>HuggingFace</span>
                             <span>Keras</span>
                             <span>XGBoost</span>
+                            <span>SHAP</span>
+                            <span>MLflow</span>
                         </div>
                     </div>
                     
@@ -355,23 +520,27 @@
                         <h3>Generative AI & LLM</h3>
                         <div class="skill-tags">
                             <span>LangChain</span>
+                            <span>LangGraph</span>
                             <span>LlamaIndex</span>
                             <span>CrewAI</span>
                             <span>RAG</span>
                             <span>Prompt Engineering</span>
                             <span>OpenAI API</span>
+                            <span>Google Gemini</span>
                         </div>
                     </div>
                     
                     <div class="skill-category">
-                        <h3>Cloud & Deployment</h3>
+                        <h3>Web & Deployment</h3>
                         <div class="skill-tags">
-                            <span>AWS</span>
-                            <span>Docker</span>
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>TypeScript</span>
                             <span>FastAPI</span>
                             <span>Streamlit</span>
+                            <span>Docker</span>
+                            <span>AWS</span>
                             <span>CI/CD</span>
-                            <span>MLflow</span>
                         </div>
                     </div>
                 </div>
