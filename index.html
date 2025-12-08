@@ -98,54 +98,33 @@
                         </div>
                     </div>
                     
-                    <p class="project-summary">Intelligent conversational AI with real-time web search capabilities powered by LangGraph for agentic decision-making, GPT-4 for responses, and Next.js for modern UI. Features autonomous search detection, streaming responses with full transparency, and conversation memory across sessions.</p>
+                    <p class="project-summary">Intelligent conversational AI with real-time web search capabilities powered by LangGraph for agentic decision-making and GPT-4 for contextual responses. Features transparent multi-stage search pipeline with real-time visualization.</p>
                     
                     <div class="project-images-grid">
-                        <img src="https://raw.githubusercontent.com/HarshTomar1234/QuantaAI/main/images/architecture.png" alt="QuantaAI Architecture">
-                        <img src="https://raw.githubusercontent.com/HarshTomar1234/QuantaAI/main/images/search-stages.png" alt="QuantaAI Search Stages">
-                        <img src="https://raw.githubusercontent.com/HarshTomar1234/QuantaAI/main/images/app-interface.png" alt="QuantaAI Interface">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/QuantaAI/main/public/app-interface.png" alt="QuantaAI Chat Interface">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/QuantaAI/main/public/langgraph-architecture.png" alt="LangGraph Architecture">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/QuantaAI/main/public/search-stages.png" alt="Search Pipeline Stages">
                     </div>
                     
                     <div class="tech-details">
                         <h4>Architecture</h4>
                         <ul>
-                            <li><strong>LangGraph State Machine:</strong> 4-node graph (Classifier → Search → Generate → Response) with conditional routing based on query analysis</li>
-                            <li><strong>Intelligent Routing:</strong> GPT-4 powered classifier achieving 94% accuracy in determining search necessity vs direct response</li>
-                            <li><strong>Search Integration:</strong> Tavily API with relevance scoring, result ranking, and automatic source attribution</li>
-                            <li><strong>Memory System:</strong> Conversation history with context window management (last 10 messages) and semantic compression</li>
-                            <li><strong>Streaming Pipeline:</strong> Real-time token streaming with intermediate state updates for transparency</li>
+                            <li><strong>LangGraph State Machine:</strong> Orchestrates multi-step reasoning with conditional routing between search, read, and write stages</li>
+                            <li><strong>Search Agent:</strong> Tavily API integration for real-time web search with relevance scoring and source attribution</li>
+                            <li><strong>GPT-4 Integration:</strong> Context-aware response generation with streaming support for real-time user feedback</li>
+                            <li><strong>Next.js Frontend:</strong> Server-side rendering with TypeScript for type-safe development and optimal performance</li>
                         </ul>
                         
-                        <h4>Features</h4>
+                        <h4>Key Features</h4>
                         <ul>
-                            <li>Autonomous decision-making: AI determines when web search is needed without explicit commands</li>
-                            <li>Multi-stage transparency: Users see classification, search, and generation phases in real-time</li>
-                            <li>Source attribution: All search-based responses include clickable source links with relevance scores</li>
-                            <li>Context-aware responses: Maintains conversation flow with intelligent context retention</li>
-                            <li>Modern UI: Next.js 14 with TypeScript, Tailwind CSS, and responsive design</li>
+                            <li>Real-time search visualization showing AI's decision-making process</li>
+                            <li>Multi-source information aggregation with automatic fact verification</li>
+                            <li>Streaming responses for improved user experience and perceived performance</li>
+                            <li>Source attribution with clickable references for transparency</li>
                         </ul>
-                        
-                        <div class="metrics-grid">
-                            <div class="metric">
-                                <span class="metric-value">94%</span>
-                                <span class="metric-label">Routing Accuracy</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">4-Node</span>
-                                <span class="metric-label">State Graph</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">Real-time</span>
-                                <span class="metric-label">Streaming</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">GPT-4</span>
-                                <span class="metric-label">Powered</span>
-                            </div>
-                        </div>
                     </div>
                     
-                    <div class="tech-stack">LangGraph • GPT-4 • Next.js 14 • TypeScript • Tavily API • Tailwind CSS</div>
+                    <div class="tech-stack">LangGraph • GPT-4 • Next.js • TypeScript • Tavily API • Vercel</div>
                 </div>
 
                 <!-- MoleCuQuest -->
@@ -157,55 +136,64 @@
                         </div>
                     </div>
                     
-                    <p class="project-summary">Cross-platform molecular research social network connecting biologists, medical researchers, and chemistry enthusiasts. Built with React Native for mobile (iOS/Android) and Next.js for web, featuring real-time collaboration, research paper sharing, and molecular structure visualization.</p>
+                    <p class="project-summary">Advanced molecular research platform combining AI-driven molecule generation with comprehensive drug discovery tools. Features NVIDIA MolMIM integration, 3D visualization, and collaborative research environment.</p>
                     
                     <div class="project-images-grid">
-                        <img src="https://raw.githubusercontent.com/HarshTomar1234/MoleCuQuest/main/images/mobile-home.png" alt="MoleCuQuest Mobile Home">
-                        <img src="https://raw.githubusercontent.com/HarshTomar1234/MoleCuQuest/main/images/web-dashboard.png" alt="MoleCuQuest Web Dashboard">
-                        <img src="https://raw.githubusercontent.com/HarshTomar1234/MoleCuQuest/main/images/molecule-viewer.png" alt="MoleCuQuest Molecule Viewer">
-                        <img src="https://raw.githubusercontent.com/HarshTomar1234/MoleCuQuest/main/images/research-feed.png" alt="MoleCuQuest Research Feed">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/MoleCuQuest/main/public/dashboard.png" alt="MoleCuQuest Dashboard">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/MoleCuQuest/main/public/molecule-generator.png" alt="AI Molecule Generator">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/MoleCuQuest/main/public/molecules.png" alt="3D Molecular Structures">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/MoleCuQuest/main/public/molecule-bank.png" alt="Molecule Database">
                     </div>
                     
                     <div class="tech-details">
-                        <h4>Platform Features</h4>
+                        <h4>Core Technologies</h4>
                         <ul>
-                            <li><strong>Cross-Platform:</strong> Unified codebase with React Native (iOS/Android) and Next.js (Web) sharing 70% code</li>
-                            <li><strong>Research Collaboration:</strong> Real-time paper sharing, annotation tools, and citation management</li>
-                            <li><strong>Molecular Visualization:</strong> 3D structure rendering with RDKit integration and interactive manipulation</li>
-                            <li><strong>Social Features:</strong> Follow researchers, join interest groups, and participate in discussions</li>
-                            <li><strong>Search & Discovery:</strong> Advanced filtering by molecule type, research area, and publication date</li>
+                            <li><strong>NVIDIA MolMIM:</strong> State-of-the-art molecular generation using masked language modeling on SMILES representations</li>
+                            <li><strong>RDKit Integration:</strong> 3D molecular visualization, property calculation, and structure validation</li>
+                            <li><strong>CMA-ES Optimization:</strong> Covariance Matrix Adaptation Evolution Strategy for molecular property optimization</li>
+                            <li><strong>QED Scoring:</strong> Quantitative Estimate of Drug-likeness for pharmaceutical viability assessment</li>
+                            <li><strong>PubChem API:</strong> Access to 100M+ chemical compounds for reference and validation</li>
                         </ul>
                         
-                        <h4>Technical Stack</h4>
+                        <h4>Research Capabilities</h4>
                         <ul>
-                            <li>Mobile: React Native with Expo for rapid development and OTA updates</li>
-                            <li>Web: Next.js 14 with server-side rendering and API routes</li>
-                            <li>Backend: Node.js with Express, PostgreSQL for data, Redis for caching</li>
-                            <li>Real-time: Socket.io for live collaboration and notifications</li>
-                            <li>Chemistry: RDKit for molecular structure processing and visualization</li>
+                            <li>AI-powered de novo molecule generation with property constraints</li>
+                            <li>Interactive 3D molecular structure visualization and manipulation</li>
+                            <li>Comprehensive property prediction (LogP, TPSA, molecular weight, etc.)</li>
+                            <li>Collaborative workspace for team-based drug discovery projects</li>
+                            <li>Integration with chemical databases for literature mining</li>
                         </ul>
-                        
-                        <div class="metrics-grid">
-                            <div class="metric">
-                                <span class="metric-value">3</span>
-                                <span class="metric-label">Platforms</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">70%</span>
-                                <span class="metric-label">Code Sharing</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">Real-time</span>
-                                <span class="metric-label">Collaboration</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">3D</span>
-                                <span class="metric-label">Visualization</span>
-                            </div>
+                    </div>
+                    
+                    <div class="tech-stack">NVIDIA MolMIM • RDKit • CMA-ES • Next.js • PubChem API • Three.js</div>
+                </div>
+
+                <!-- Field Fusion -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/Field-Fusion" target="_blank">Field Fusion</a></h3>
+                        <div class="project-meta">
+                            <span class="year">2024</span>
                         </div>
                     </div>
                     
-                    <div class="tech-stack">React Native • Next.js 14 • Node.js • PostgreSQL • Socket.io • RDKit • Expo</div>
+                    <p class="project-summary">Comprehensive football match analysis system using computer vision for player tracking, team classification, and tactical insights. Real-time processing with advanced metrics calculation.</p>
+                    
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/Field-Fusion/main/output_videos/screenshot.png" alt="Field Fusion Match Analysis">
+                    </div>
+                    
+                    <div class="tech-details">
+                        <h4>Technical Features</h4>
+                        <ul>
+                            <li><strong>Player Detection:</strong> YOLOv8 for multi-player tracking with team classification using K-means clustering on jersey colors</li>
+                            <li><strong>Ball Tracking:</strong> Custom trained model with trajectory prediction and possession analysis</li>
+                            <li><strong>Camera Movement:</strong> Optical flow estimation for stabilized tracking across camera pans and zooms</li>
+                            <li><strong>Speed Analysis:</strong> Real-time player speed calculation with distance covered metrics</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-stack">YOLOv8 • OpenCV • K-means • Optical Flow • ByteTrack</div>
                 </div>
 
                 <!-- RAGify -->
@@ -214,110 +202,28 @@
                         <h3><a href="https://github.com/HarshTomar1234/RAGify" target="_blank">RAGify</a></h3>
                         <div class="project-meta">
                             <span class="stars">⭐ 1</span>
-                            <span class="year">2025</span>
+                            <span class="year">2024</span>
                         </div>
                     </div>
                     
-                    <p class="project-summary">Production-grade Retrieval-Augmented Generation (RAG) pipeline achieving 87% answer accuracy on domain-specific queries. Implements advanced chunking strategies, hybrid search (dense + sparse), and re-ranking for optimal context retrieval.</p>
-                    
-                    <div class="tech-details">
-                        <h4>RAG Pipeline Architecture</h4>
-                        <ul>
-                            <li><strong>Document Processing:</strong> Multi-format support (PDF, DOCX, TXT) with intelligent chunking using RecursiveCharacterTextSplitter (chunk_size=1000, overlap=200)</li>
-                            <li><strong>Embedding Strategy:</strong> OpenAI text-embedding-3-large (3072 dimensions) with batch processing for efficiency</li>
-                            <li><strong>Vector Store:</strong> Pinecone with metadata filtering, achieving <50ms query latency at 100K+ documents</li>
-                            <li><strong>Hybrid Search:</strong> Combines dense embeddings (semantic) with BM25 (keyword) using reciprocal rank fusion (RRF)</li>
-                            <li><strong>Re-ranking:</strong> Cross-encoder model (ms-marco-MiniLM) improving relevance by 23% over base retrieval</li>
-                            <li><strong>Generation:</strong> GPT-4 with context-aware prompting and citation generation</li>
-                        </ul>
-                        
-                        <h4>Advanced Features</h4>
-                        <ul>
-                            <li>Query expansion using LLM-generated variations for better recall</li>
-                            <li>Contextual compression removing irrelevant information before generation</li>
-                            <li>Source attribution with exact chunk references and confidence scores</li>
-                            <li>Conversation memory maintaining context across multi-turn interactions</li>
-                            <li>Evaluation framework with RAGAS metrics (faithfulness, answer relevance, context precision)</li>
-                        </ul>
-                        
-                        <div class="metrics-grid">
-                            <div class="metric">
-                                <span class="metric-value">87%</span>
-                                <span class="metric-label">Answer Accuracy</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">23%</span>
-                                <span class="metric-label">Re-rank Improvement</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value"><50ms</span>
-                                <span class="metric-label">Query Latency</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">100K+</span>
-                                <span class="metric-label">Documents</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tech-stack">LangChain • Pinecone • GPT-4 • OpenAI Embeddings • BM25 • Cross-Encoders</div>
-                </div>
-
-                <!-- Field Fusion -->
-                <div class="project-detailed">
-                    <div class="project-header">
-                        <h3><a href="https://github.com/HarshTomar1234/Field_Fusion" target="_blank">Field Fusion</a></h3>
-                        <div class="project-meta">
-                            <span class="year">2025</span>
-                        </div>
-                    </div>
-                    
-                    <p class="project-summary">Football match analysis system using computer vision for player tracking, team classification, ball detection, and tactical analysis. Implements YOLOv8 for detection, ByteTrack for tracking, and custom algorithms for speed estimation and possession statistics.</p>
+                    <p class="project-summary">Comprehensive Retrieval-Augmented Generation (RAG) implementation from scratch. Educational repository demonstrating core RAG concepts, vector databases, and semantic search pipelines.</p>
                     
                     <div class="project-image">
-                        <img src="https://raw.githubusercontent.com/HarshTomar1234/Field_Fusion/main/output_videos/screenshot.png" alt="Field Fusion Analysis">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/RAGify/main/images/rag-workflow.png" alt="RAG Workflow Architecture">
                     </div>
                     
                     <div class="tech-details">
-                        <h4>Computer Vision Pipeline</h4>
+                        <h4>Implementation Details</h4>
                         <ul>
-                            <li><strong>Player Detection:</strong> YOLOv8 fine-tuned on football dataset achieving 91% mAP with multi-scale detection</li>
-                            <li><strong>Team Classification:</strong> K-means clustering on jersey colors with 89% accuracy, handling lighting variations</li>
-                            <li><strong>Player Tracking:</strong> ByteTrack algorithm maintaining identity across occlusions with 94% MOTA score</li>
-                            <li><strong>Ball Detection:</strong> Custom YOLOv8 model trained on 2000+ annotated frames with temporal smoothing</li>
-                            <li><strong>Speed Estimation:</strong> Perspective transformation with camera calibration for accurate real-world measurements</li>
+                            <li><strong>Document Processing:</strong> Text chunking strategies with overlap for context preservation</li>
+                            <li><strong>Embedding Generation:</strong> Sentence transformers for semantic vector representations</li>
+                            <li><strong>Vector Storage:</strong> FAISS and Chroma DB implementations for efficient similarity search</li>
+                            <li><strong>Retrieval Pipeline:</strong> Hybrid search combining dense and sparse retrieval methods</li>
+                            <li><strong>Generation:</strong> LLM integration with context injection and prompt engineering</li>
                         </ul>
-                        
-                        <h4>Analytics Features</h4>
-                        <ul>
-                            <li>Real-time player speed and distance covered calculations</li>
-                            <li>Team possession statistics with temporal analysis</li>
-                            <li>Heatmap generation showing player positioning and movement patterns</li>
-                            <li>Pass detection and completion rate analysis</li>
-                            <li>Tactical formation recognition and visualization</li>
-                        </ul>
-                        
-                        <div class="metrics-grid">
-                            <div class="metric">
-                                <span class="metric-value">91%</span>
-                                <span class="metric-label">Detection mAP</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">94%</span>
-                                <span class="metric-label">Tracking MOTA</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">89%</span>
-                                <span class="metric-label">Team Classification</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">Real-time</span>
-                                <span class="metric-label">Processing</span>
-                            </div>
-                        </div>
                     </div>
                     
-                    <div class="tech-stack">YOLOv8 • ByteTrack • OpenCV • K-means • Perspective Transformation</div>
+                    <div class="tech-stack">LangChain • FAISS • Chroma • Sentence Transformers • OpenAI</div>
                 </div>
 
                 <!-- TinderMuse -->
@@ -326,88 +232,255 @@
                         <h3><a href="https://github.com/HarshTomar1234/tindermuse" target="_blank">TinderMuse</a></h3>
                         <div class="project-meta">
                             <span class="stars">⭐ 1</span>
+                            <span class="year">2024</span>
+                        </div>
+                    </div>
+                    
+                    <p class="project-summary">AI-powered Tinder profile image generator using advanced image enhancement and style transfer techniques. Transforms ordinary photos into attention-grabbing profile pictures.</p>
+                    
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/tindermuse/main/public/interface.png" alt="TinderMuse Interface">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/tindermuse/main/public/profile-example.png" alt="Profile Enhancement Example">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/tindermuse/main/public/tindermuse-app.png" alt="TinderMuse Application">
+                    </div>
+                    
+                    <div class="tech-details">
+                        <h4>AI Capabilities</h4>
+                        <ul>
+                            <li><strong>Image Enhancement:</strong> AI-driven color correction, lighting optimization, and detail enhancement</li>
+                            <li><strong>Background Removal:</strong> Automatic subject segmentation with edge refinement</li>
+                            <li><strong>Style Transfer:</strong> Multiple artistic styles and filters for personalized aesthetics</li>
+                            <li><strong>Face Detection:</strong> Automatic cropping and framing for optimal composition</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-stack">Stable Diffusion • OpenCV • Next.js • Replicate API</div>
+                </div>
+            </section>
+
+            <section class="research-implementation">
+                <h2>Research Paper Implementation</h2>
+                <p class="section-desc">Deep dives into cutting-edge AI research with from-scratch implementations</p>
+                
+                <!-- VLMverse -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/VLMverse" target="_blank">VLMverse: Vision-Language Models</a></h3>
+                        <div class="project-meta">
                             <span class="year">2025</span>
                         </div>
                     </div>
                     
-                    <p class="project-summary">AI-powered dating profile image generator using Google's Gemini 2.5 for intelligent image enhancement, background replacement, and style transfer. Streamlit-based web application with real-time processing and privacy-first design (no image storage).</p>
+                    <p class="project-summary">Complete PyTorch implementation of PaLiGemma 3B vision-language model from scratch. Combines Google's Gemma language model with SigLIP vision encoder for multimodal understanding. Detailed architectural breakdown with educational code demonstrating how VLMs process images and text to generate contextually relevant responses.</p>
                     
                     <div class="project-images-grid">
-                        <img src="https://raw.githubusercontent.com/HarshTomar1234/tindermuse/main/images/interface.png" alt="TinderMuse Interface">
-                        <img src="https://raw.githubusercontent.com/HarshTomar1234/tindermuse/main/images/before-after-1.png" alt="TinderMuse Example 1">
-                        <img src="https://raw.githubusercontent.com/HarshTomar1234/tindermuse/main/images/before-after-2.png" alt="TinderMuse Example 2">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/VLMverse/main/images/VLMs%20architecture.png" alt="Vision-Language Model Architecture">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/VLMverse/main/images/PaliGemma%203B%20VLM%20implementation%20.png" alt="PaLiGemma Implementation">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/VLMverse/main/images/SigLip%20ViT.png" alt="SigLIP Vision Transformer">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/VLMverse/main/images/RoPE%20embeddings.png" alt="Rotary Position Embeddings">
                     </div>
                     
                     <div class="tech-details">
-                        <h4>AI Enhancement Pipeline</h4>
+                        <h4>Architecture Components</h4>
                         <ul>
-                            <li><strong>Image Analysis:</strong> Gemini 2.5 Vision analyzing composition, lighting, background, and subject positioning</li>
-                            <li><strong>Smart Enhancement:</strong> Automatic lighting correction, color grading, and facial feature optimization</li>
-                            <li><strong>Background Replacement:</strong> AI-powered background removal and replacement with contextually appropriate scenes</li>
-                            <li><strong>Style Transfer:</strong> Apply artistic styles (professional, casual, artistic, vintage) while maintaining subject identity</li>
-                            <li><strong>Batch Processing:</strong> Process multiple images simultaneously with consistent style application</li>
+                            <li><strong>SigLIP Vision Encoder:</strong> Improved CLIP variant using sigmoid loss instead of contrastive loss. Processes 224×224 images into 196 patch embeddings (16×16 patches). Features Vision Transformer with learned positional embeddings, multi-head self-attention, and feed-forward networks with GeLU activations.</li>
+                            <li><strong>Gemma Language Model:</strong> Decoder-only transformer with 2B parameters. Uses RMSNorm for training stability, RoPE (Rotary Position Encoding) for positional information, and grouped-query attention for computational efficiency. Implements flash attention and KV-caching for fast inference.</li>
+                            <li><strong>Multimodal Fusion:</strong> Linear projection layer maps vision embeddings to language model's embedding space. Image tokens prepended to text tokens, enabling cross-modal attention. Supports visual question answering, image captioning, and visual reasoning tasks.</li>
+                            <li><strong>RoPE Implementation:</strong> Rotary position encoding applies 2D rotation matrices to query/key vectors. Rotation angle θⱼ = 10000^(-2j/d) encodes relative positions. Enables length extrapolation beyond training sequence lengths.</li>
                         </ul>
                         
-                        <h4>Use Cases</h4>
+                        <h4>Key Innovations</h4>
                         <ul>
-                            <li>Dating profile optimization with professional-quality photos</li>
-                            <li>Background replacement for better visual context</li>
-                            <li>Lighting enhancement for flattering appearance</li>
-                            <li>Artistic style application for unique profiles</li>
+                            <li>SigLIP's sigmoid loss enables better hard negative handling and more stable training compared to CLIP's contrastive loss</li>
+                            <li>Grouped-query attention reduces KV cache size by 8x while maintaining 95% of full attention performance</li>
+                            <li>RoPE encoding provides better length generalization than absolute or learned positional embeddings</li>
+                            <li>Pre-trained weights from Hugging Face enable immediate inference without training</li>
                         </ul>
                         
-                        <div class="metrics-grid">
-                            <div class="metric">
-                                <span class="metric-value">Gemini 2.5</span>
-                                <span class="metric-label">AI Model</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">15-45s</span>
-                                <span class="metric-label">Processing Time</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">Privacy</span>
-                                <span class="metric-label">No Storage</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">Streamlit</span>
-                                <span class="metric-label">Web Framework</span>
-                            </div>
+                        <h4>Implementation Highlights</h4>
+                        <ul>
+                            <li>Complete modeling code in modeling_siglip.py (vision) and modeling_gemma.py (language)</li>
+                            <li>Inference pipeline with image preprocessing, tokenization, and autoregressive generation</li>
+                            <li>KV-cache implementation for 3x faster generation speed</li>
+                            <li>Detailed documentation explaining every architectural choice</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-stack">PyTorch • Transformers • SigLIP • Gemma • RoPE • Flash Attention</div>
+                </div>
+
+                <!-- PyTorch LoRA-QLoRA -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/PyTorch-LoRA-QLoRA" target="_blank">PyTorch LoRA & QLoRA</a></h3>
+                        <div class="project-meta">
+                            <span class="year">2025</span>
                         </div>
                     </div>
                     
-                    <div class="tech-stack">Python • Streamlit • Google Gemini 2.5 • Image Generation • AI Enhancement</div>
+                    <p class="project-summary">Pure PyTorch implementations of LoRA (Low-Rank Adaptation) and QLoRA (Quantized LoRA) for memory-efficient fine-tuning of large language models. Reduces memory requirements by 65-85% while maintaining performance comparable to full fine-tuning. Includes practical examples for text and image classification.</p>
+                    
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/PyTorch-LoRA-QLoRA/main/images/lora_architecture.svg" alt="LoRA Architecture">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/PyTorch-LoRA-QLoRA/main/images/qlora_architecture.svg" alt="QLoRA Architecture">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/PyTorch-LoRA-QLoRA/main/images/memory_comparison.svg" alt="Memory Efficiency Comparison">
+                    </div>
+                    
+                    <div class="tech-details">
+                        <h4>LoRA Implementation</h4>
+                        <ul>
+                            <li><strong>Low-Rank Decomposition:</strong> Freezes pre-trained weights W and adds trainable matrices A ∈ ℝᵈˣʳ and B ∈ ℝʳˣᵏ where r ≪ min(d,k). Forward pass: y = xW + x(AB) = x(W + AB). Typical rank r = 8, 16, or 32 reduces trainable parameters by 99%.</li>
+                            <li><strong>Scaling Factor:</strong> Uses α/r scaling to control update magnitude. Standard LoRA: W' = W + α·AB/r. Rank-stabilized variant: W' = W + α·AB/√r for better numerical stability.</li>
+                            <li><strong>Layer Selection:</strong> Typically applied to query/value projection matrices in attention layers. Can also target feed-forward layers for additional capacity.</li>
+                            <li><strong>Initialization:</strong> Matrix A initialized with Kaiming uniform, matrix B initialized to zeros. Ensures LoRA starts as identity transformation.</li>
+                        </ul>
+                        
+                        <h4>QLoRA Innovations</h4>
+                        <ul>
+                            <li><strong>4-bit NF4 Quantization:</strong> Normal Float 4-bit quantization optimized for weight distributions in neural networks. Quantizes frozen weights to 4-bit while keeping LoRA adapters in BF16 precision.</li>
+                            <li><strong>Double Quantization:</strong> Quantizes the quantization constants themselves, saving additional 0.4 bits per parameter. Reduces memory by 3% with negligible accuracy impact.</li>
+                            <li><strong>Paged Optimizers:</strong> Offloads optimizer states to CPU RAM when GPU memory is full. Enables fine-tuning of 65B models on 48GB GPUs.</li>
+                            <li><strong>Gradient Checkpointing:</strong> Trades computation for memory by recomputing activations during backward pass. Combined with QLoRA enables 70B model fine-tuning on consumer hardware.</li>
+                        </ul>
+                        
+                        <h4>Practical Applications</h4>
+                        <ul>
+                            <li>Text classification with BERT: 99.2% accuracy with only 0.8% trainable parameters</li>
+                            <li>Vision Transformer fine-tuning: 94.7% on CIFAR-10 with 1.2M trainable params vs 86M full fine-tuning</li>
+                            <li>LLaMA-7B instruction tuning: Matches full fine-tuning quality with 65% less memory</li>
+                            <li>Multi-task learning: Train separate LoRA adapters for different tasks, switch at inference time</li>
+                        </ul>
+                        
+                        <h4>Code Structure</h4>
+                        <ul>
+                            <li>lora.py: Core LoRA layer implementation with configurable rank and scaling</li>
+                            <li>qlora.py: QLoRA with 4-bit quantization and double quantization</li>
+                            <li>train_text_classifier.py: BERT fine-tuning example on sentiment analysis</li>
+                            <li>train_vit_image_classifier.py: Vision Transformer fine-tuning on CIFAR-10</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-stack">PyTorch • LoRA • QLoRA • 4-bit Quantization • PEFT • BitsAndBytes</div>
                 </div>
-            </section>
 
-            <section class="research-implementations">
-                <h2>Research Paper Implementations</h2>
-                <p class="section-desc">From-scratch implementations of cutting-edge AI research papers in PyTorch</p>
-                
-                <div class="project-grid">
-                    <div class="project-card">
-                        <h3><a href="https://github.com/HarshTomar1234/VLMverse" target="_blank">VLMverse</a></h3>
-                        <p>PyTorch implementations of cutting-edge vision-language models from scratch. Features PaLiGemma (SigLIP + Gemma) with detailed architectural breakdowns, clean educational code, and comprehensive documentation. Demystifying multimodal AI by turning research papers into working code.</p>
-                        <div class="tech-stack">PyTorch • Vision-Language Models • PaLiGemma • SigLIP • Gemma</div>
+                <!-- Paper Replications -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/Paper-Replications" target="_blank">Paper Replications</a></h3>
+                        <div class="project-meta">
+                            <span class="year">2024-2025</span>
+                        </div>
                     </div>
                     
-                    <div class="project-card">
-                        <h3><a href="https://github.com/HarshTomar1234/vision_transformer-ViT-" target="_blank">Vision Transformer (ViT)</a></h3>
-                        <p>Complete Vision Transformer implementation in PyTorch from the "An Image is Worth 16x16 Words" paper. Includes training pipelines for CIFAR-10 and ImageNet, patch embedding mechanisms, multi-head self-attention, and position encodings with detailed explanations.</p>
-                        <div class="tech-stack">PyTorch • Vision Transformer • Self-Attention • CIFAR-10 • ImageNet</div>
+                    <p class="project-summary">Comprehensive repository of 39+ classic and state-of-the-art AI/ML paper implementations in PyTorch. From foundational architectures like BERT and GPT to cutting-edge models like DeepSeek-V3, Llama 4, and Differential Transformers. Each implementation includes detailed documentation, training scripts, and architectural explanations.</p>
+                    
+                    <div class="tech-details">
+                        <h4>Vision-Language Models</h4>
+                        <ul>
+                            <li><strong>PaLiGemma:</strong> Google's 3B parameter VLM combining SigLIP vision encoder with Gemma language model. Implements multimodal fusion, grouped-query attention, and RoPE positional encoding.</li>
+                            <li><strong>LLaVA:</strong> Large Language and Vision Assistant with visual instruction tuning. Features vision-language connector, multi-turn conversations, and visual reasoning capabilities.</li>
+                            <li><strong>CLIP:</strong> Contrastive Language-Image Pre-training with dual encoder architecture. Implements contrastive loss, temperature scaling, and zero-shot classification.</li>
+                            <li><strong>CLAP:</strong> Contrastive Language-Audio Pre-training extending CLIP to audio domain. Audio encoder with mel-spectrogram processing and cross-modal retrieval.</li>
+                        </ul>
+                        
+                        <h4>Large Language Models</h4>
+                        <ul>
+                            <li><strong>DeepSeek-V3:</strong> Latest 671B parameter MoE model with Multi-head Latent Attention and auxiliary-loss-free load balancing. Implements FP8 mixed precision training.</li>
+                            <li><strong>Llama 4:</strong> Meta's latest open-source LLM with grouped-query attention, RMSNorm, and SwiGLU activations. Includes pre-training and instruction tuning code.</li>
+                            <li><strong>Gemma 3:</strong> Google's lightweight 2B/7B models with multi-query attention and knowledge distillation from larger models.</li>
+                            <li><strong>GPT:</strong> Decoder-only transformer with causal masking, learned positional embeddings, and autoregressive generation.</li>
+                            <li><strong>BERT:</strong> Bidirectional encoder with masked language modeling and next sentence prediction objectives.</li>
+                        </ul>
+                        
+                        <h4>Advanced Architectures</h4>
+                        <ul>
+                            <li><strong>Differential Transformer:</strong> Novel attention mechanism with differential attention scores. Reduces noise amplification and improves long-context modeling.</li>
+                            <li><strong>Mixtral MoE:</strong> Mixture of Experts with 8 expert networks and top-2 routing. Implements load balancing loss and expert capacity constraints.</li>
+                            <li><strong>Kimi-K2:</strong> Long-context model with 200K token window using sparse attention and memory-efficient transformers.</li>
+                        </ul>
+                        
+                        <h4>Generative Models</h4>
+                        <ul>
+                            <li><strong>DCGANs:</strong> Deep Convolutional GANs with batch normalization, LeakyReLU, and transposed convolutions for image generation.</li>
+                            <li><strong>CGANs:</strong> Conditional GANs with class conditioning for controlled generation.</li>
+                            <li><strong>CycleGANs:</strong> Unpaired image-to-image translation with cycle consistency loss.</li>
+                            <li><strong>Pix2Pix:</strong> Paired image translation with U-Net generator and PatchGAN discriminator.</li>
+                        </ul>
+                        
+                        <h4>Fine-Tuning Methods</h4>
+                        <ul>
+                            <li><strong>LoRA:</strong> Low-rank adaptation for parameter-efficient fine-tuning with rank decomposition.</li>
+                            <li><strong>DPO:</strong> Direct Preference Optimization for RLHF without reward model training.</li>
+                            <li><strong>ORPO:</strong> Odds Ratio Preference Optimization combining SFT and preference learning.</li>
+                            <li><strong>PEFT:</strong> Parameter-Efficient Fine-Tuning with adapters, prefix tuning, and prompt tuning.</li>
+                        </ul>
+                        
+                        <h4>Specialized Models</h4>
+                        <ul>
+                            <li><strong>Moonshine:</strong> Efficient speech recognition with streaming capabilities and low-latency inference.</li>
+                            <li><strong>Attention Mechanisms:</strong> Multi-head, multi-query, grouped-query, and flash attention implementations.</li>
+                            <li><strong>Encoder-Decoder:</strong> Seq2seq with attention for machine translation and summarization.</li>
+                            <li><strong>GRU:</strong> Gated Recurrent Units for sequence modeling with reset and update gates.</li>
+                        </ul>
                     </div>
                     
-                    <div class="project-card">
-                        <h3><a href="https://github.com/HarshTomar1234/PyTorch-LoRA-QLoRA" target="_blank">PyTorch LoRA-QLoRA</a></h3>
-                        <p>Pure PyTorch implementations of LoRA and QLoRA for memory-efficient fine-tuning of large language models and vision transformers. Features custom training scripts, quantization techniques, and practical examples for text classification and image classification tasks.</p>
-                        <div class="tech-stack">PyTorch • LoRA • QLoRA • Fine-tuning • Quantization • PEFT</div>
+                    <div class="tech-stack">PyTorch • Transformers • Computer Vision • NLP • Generative AI • RLHF</div>
+                </div>
+
+                <!-- Reasoning LLMs -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/Reasoning-llms-" target="_blank">Reasoning LLMs from Scratch</a></h3>
+                        <div class="project-meta">
+                            <span class="year">2025</span>
+                        </div>
                     </div>
                     
-                    <div class="project-card">
-                        <h3><a href="https://github.com/HarshTomar1234/Reasoning-llms-" target="_blank">Reasoning LLMs</a></h3>
-                        <p>Core concepts of reasoning in Large Language Models implemented from scratch. Explores inference-time compute scaling, reinforcement learning approaches, chain-of-thought mechanisms, and advanced reasoning techniques for building more capable AI systems.</p>
-                        <div class="tech-stack">PyTorch • Reasoning • LLMs • Reinforcement Learning • Chain-of-Thought</div>
+                    <p class="project-summary">Comprehensive exploration of reasoning capabilities in Large Language Models implemented from scratch. Covers inference-time compute scaling, reinforcement learning approaches, chain-of-thought mechanisms, and advanced reasoning techniques for building more capable AI systems.</p>
+                    
+                    <div class="tech-details">
+                        <h4>Inference-Time Compute Scaling</h4>
+                        <ul>
+                            <li><strong>Test-Time Compute:</strong> Allocates additional computation during inference rather than just training. Implements best-of-N sampling, beam search, and self-consistency decoding for improved reasoning.</li>
+                            <li><strong>Adaptive Computation:</strong> Dynamically adjusts compute based on problem difficulty. Easy questions use single forward pass, hard questions trigger multi-step reasoning with verification.</li>
+                            <li><strong>Scaling Laws:</strong> Empirical analysis showing reasoning accuracy improves log-linearly with test-time compute. Demonstrates 2-3x accuracy gains on math/coding tasks with 10x more inference compute.</li>
+                            <li><strong>Compute-Optimal Strategies:</strong> Compares different inference strategies (sampling, beam search, self-refinement) across compute budgets. Identifies optimal allocation for different task types.</li>
+                        </ul>
+                        
+                        <h4>Reinforcement Learning for Reasoning</h4>
+                        <ul>
+                            <li><strong>Outcome-Based RL:</strong> Trains models using final answer correctness as reward signal. Implements REINFORCE with baseline and PPO for stable training.</li>
+                            <li><strong>Process-Based RL:</strong> Provides step-by-step feedback on reasoning process. Uses process reward models (PRMs) to score intermediate reasoning steps.</li>
+                            <li><strong>Self-Play Training:</strong> Model generates reasoning traces, evaluates them, and learns from successful strategies. Implements iterative refinement with rejection sampling.</li>
+                            <li><strong>Reward Modeling:</strong> Trains separate reward models to evaluate reasoning quality. Combines outcome rewards (correctness) with process rewards (reasoning quality).</li>
+                        </ul>
+                        
+                        <h4>Chain-of-Thought Mechanisms</h4>
+                        <ul>
+                            <li><strong>Zero-Shot CoT:</strong> Prompts like "Let's think step by step" elicit reasoning without examples. Implements prompt engineering strategies for different domains.</li>
+                            <li><strong>Few-Shot CoT:</strong> Provides exemplar reasoning traces in context. Demonstrates 3-5x accuracy improvements on complex reasoning tasks.</li>
+                            <li><strong>Self-Consistency:</strong> Samples multiple reasoning paths and takes majority vote. Implements temperature-based sampling and answer aggregation strategies.</li>
+                            <li><strong>Tree-of-Thoughts:</strong> Explores multiple reasoning branches in parallel. Uses breadth-first and depth-first search with pruning based on intermediate evaluations.</li>
+                        </ul>
+                        
+                        <h4>Advanced Reasoning Techniques</h4>
+                        <ul>
+                            <li><strong>Least-to-Most Prompting:</strong> Decomposes complex problems into simpler subproblems. Solves subproblems sequentially, using previous solutions as context.</li>
+                            <li><strong>Maieutic Prompting:</strong> Generates explanations for both correct and incorrect answers. Uses consistency checking to identify and eliminate faulty reasoning.</li>
+                            <li><strong>Reflexion:</strong> Self-reflection on failed attempts to improve future reasoning. Maintains episodic memory of mistakes and successful strategies.</li>
+                            <li><strong>Verify-and-Edit:</strong> Generates initial solution, verifies correctness, and iteratively refines. Implements verification models and editing strategies.</li>
+                        </ul>
+                        
+                        <h4>Implementation Details</h4>
+                        <ul>
+                            <li>Jupyter notebooks with step-by-step explanations of each reasoning technique</li>
+                            <li>PyTorch implementations of RL algorithms (REINFORCE, PPO) for reasoning</li>
+                            <li>Evaluation harnesses for math (GSM8K), coding (HumanEval), and commonsense reasoning</li>
+                            <li>Visualization tools for reasoning traces and decision trees</li>
+                        </ul>
                     </div>
+                    
+                    <div class="tech-stack">PyTorch • Reinforcement Learning • Chain-of-Thought • Tree-of-Thoughts • PPO</div>
                 </div>
             </section>
 
@@ -448,12 +521,6 @@
                         <h3><a href="https://github.com/HarshTomar1234/reasoning-from-scratch" target="_blank">Reasoning from Scratch</a></h3>
                         <p>Implementation of reasoning LLM in PyTorch from scratch, step by step. Explores chain-of-thought, tree-of-thought, and other reasoning mechanisms in language models.</p>
                         <div class="tech-stack">PyTorch • Reasoning • LLM • From Scratch</div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3><a href="https://github.com/HarshTomar1234/Paper-Replications" target="_blank">Paper Replications</a></h3>
-                        <p>Repository of classic and SOTA AI/ML paper implementations in PyTorch. Includes architecture replications with detailed documentation and training scripts.</p>
-                        <div class="tech-stack">PyTorch • Research Papers • Deep Learning</div>
                     </div>
                     
                     <div class="project-card">
