@@ -523,9 +523,9 @@ h2 {
 }
 
 .contact-note {
-    color: #4a5568;
-    font-size: 1rem;
-    font-style: italic;
+    color: #1a202c;
+    font-size: 1.1rem;
+    font-weight: 500;
     max-width: 600px;
     margin: 0 auto;
 }
