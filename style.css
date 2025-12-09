@@ -515,6 +515,70 @@ h2 {
     font-weight: 500;
 }
 
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-section h2 {
+    color: white;
+    border-bottom: none;
+    margin-bottom: 1rem;
+}
+
+.contact-desc {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-btn.primary {
+    background: white;
+    color: #667eea;
+}
+
+.contact-btn.primary:hover {
+    background: #f0f4f8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-btn.secondary {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-btn.secondary:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
 /* Footer */
 footer {
     text-align: center;
