@@ -542,6 +542,61 @@ h2 {
     font-weight: 500;
 }
 
+/* Testimonial Section */
+.testimonial-section {
+    margin-bottom: 3rem;
+}
+
+.testimonial {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid #4299e1;
+}
+
+.testimonial blockquote {
+    font-size: 1.05rem;
+    color: #4a5568;
+    line-height: 1.8;
+    font-style: italic;
+    margin: 0 0 1.5rem 0;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author strong {
+    color: #1a202c;
+    font-size: 1rem;
+}
+
+.testimonial-author span {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.certificate-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.cert-link {
+    color: #4299e1;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cert-link:hover {
+    text-decoration: underline;
+}
+
 /* Contact Section */
 .contact-section {
     text-align: center;
