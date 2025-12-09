@@ -78,6 +78,16 @@ h1 {
     background-color: #f7fafc;
 }
 
+.resume-link {
+    background-color: #4299e1 !important;
+    color: white !important;
+}
+
+.resume-link:hover {
+    background-color: #3182ce !important;
+    color: white !important;
+}
+
 /* Main Content */
 main {
     margin-bottom: 4rem;
