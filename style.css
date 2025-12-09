@@ -146,7 +146,8 @@ h2 {
     align-items: center;
 }
 
-.stars, .year {
+.stars,
+.year {
     font-size: 0.9rem;
     color: #718096;
     font-weight: 500;
@@ -247,10 +248,13 @@ h2 {
 
 .metric-value {
     display: block;
-    font-size: 2rem;
+    font-size: clamp(1rem, 4vw, 1.75rem);
     font-weight: 700;
     color: #4299e1;
     margin-bottom: 0.5rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.2;
 }
 
 .metric-label {
@@ -534,52 +538,52 @@ footer a:hover {
     .container {
         padding: 1rem;
     }
-    
+
     h1 {
         font-size: 2rem;
     }
-    
+
     .tagline {
         font-size: 1.1rem;
     }
-    
+
     .social-links {
         gap: 1rem;
     }
-    
+
     .project-detailed {
         padding: 1.5rem;
     }
-    
+
     .project-header {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .project-images-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .project-images-grid img {
         height: 200px;
     }
-    
+
     .metrics-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .project-grid,
     .skills-grid,
     .achievements-grid,
     .blog-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .exp-header {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .duration {
         margin-left: 0;
     }
@@ -590,24 +594,24 @@ footer a:hover {
         width: 100px;
         height: 100px;
     }
-    
+
     h1 {
         font-size: 1.8rem;
     }
-    
+
     .social-links {
         flex-direction: column;
         gap: 0.5rem;
     }
-    
+
     .project-images-grid img {
         height: 180px;
     }
-    
+
     .metrics-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .achievement-number {
         font-size: 2rem;
     }
