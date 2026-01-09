@@ -96,7 +96,7 @@
                 style="text-align: center; margin-top: 4rem; padding: 2rem; background: #f8fafc; border-radius: 8px;">
                 <p id="meme-caption" style="font-size: 1.1rem; color: #4a5568; margin-bottom: 1rem;"></p>
                 <img id="meme-image" alt="ML Meme"
-                    style="max-width: 300px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    style="width: 300px; height: 300px; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background: #fff;">
                 <p id="meme-subtitle" style="font-size: 0.85rem; color: #718096; margin-top: 1rem; font-style: italic;">
                 </p>
                 <button onclick="showRandomMeme()"
@@ -130,25 +130,25 @@
                     // Computer Vision
                     { img: "https://i.imgflip.com/3lmzyx.jpg", caption: "CNN detecting a stop sign as 45mph speed limit:", subtitle: "\"Close enough\"" },
                     { img: "https://i.imgflip.com/2p3dw0.jpg", caption: "When YOLO detects everything as a person:", subtitle: "\"That's a lamp, but sure\"" },
-                    { img: "https://i.imgflip.com/4/7e3qb.jpg", caption: "Training object detection for 3 days:", subtitle: "\"mAP: 0.02... still worth it\"" },
+                    { img: "https://i.imgflip.com/7e3qb.jpg", caption: "Training object detection for 3 days:", subtitle: "\"mAP: 0.02... still worth it\"" },
 
                     // NLP & RAG
-                    { img: "https://i.imgflip.com/2/1c1uej.jpg", caption: "My chatbot responding to any question:", subtitle: "\"I don't have enough context for that\"" },
-                    { img: "https://i.imgflip.com/4/1ur9b0.jpg", caption: "RAG pipeline finding relevant chunks:", subtitle: "\"Is this... semantically similar?\"" },
-                    { img: "https://i.imgflip.com/2/3oevdk.jpg", caption: "LLM hallucinating confidently:", subtitle: "\"I made it up, but I said it with conviction\"" },
-                    { img: "https://i.imgflip.com/4/14y7ls.jpg", caption: "My embeddings after 5 hours of training:", subtitle: "\"Everything is in the same cluster\"" },
+                    { img: "https://i.imgflip.com/1c1uej.jpg", caption: "My chatbot responding to any question:", subtitle: "\"I don't have enough context for that\"" },
+                    { img: "https://i.imgflip.com/1ur9b0.jpg", caption: "RAG pipeline finding relevant chunks:", subtitle: "\"Is this... semantically similar?\"" },
+                    { img: "https://i.imgflip.com/3oevdk.jpg", caption: "LLM hallucinating confidently:", subtitle: "\"I made it up, but I said it with conviction\"" },
+                    { img: "https://i.imgflip.com/14y7ls.jpg", caption: "My embeddings after 5 hours of training:", subtitle: "\"Everything is in the same cluster\"" },
 
                     // PyTorch & Python
-                    { img: "https://i.imgflip.com/4/3pnmg.jpg", caption: "import torch as tf:", subtitle: "\"Some people just want to watch the world burn\"" },
-                    { img: "https://i.imgflip.com/2/52wv.jpg", caption: "Forgetting .to(device) for the 100th time:", subtitle: "\"Expected cuda:0 but got cpu\"" },
-                    { img: "https://i.imgflip.com/4/1h7in3.jpg", caption: "Python at 3am:", subtitle: "\"IndentationError: expected an indented block\"" },
-                    { img: "https://i.imgflip.com/2/13yvm5.jpg", caption: "PyTorch vs TensorFlow debates:", subtitle: "\"Why not both?\" said no one ever" },
+                    { img: "https://i.imgflip.com/3pnmg.jpg", caption: "import torch as tf:", subtitle: "\"Some people just want to watch the world burn\"" },
+                    { img: "https://i.imgflip.com/52wv.jpg", caption: "Forgetting .to(device) for the 100th time:", subtitle: "\"Expected cuda:0 but got cpu\"" },
+                    { img: "https://i.imgflip.com/1h7in3.jpg", caption: "Python at 3am:", subtitle: "\"IndentationError: expected an indented block\"" },
+                    { img: "https://i.imgflip.com/13yvm5.jpg", caption: "PyTorch vs TensorFlow debates:", subtitle: "\"Why not both?\" said no one ever" },
 
                     // MLOps & Deployment
-                    { img: "https://i.imgflip.com/4/3qqcim.jpg", caption: "Model works locally, fails in production:", subtitle: "\"Works on my machine ¯\\_(ツ)_/¯\"" },
-                    { img: "https://i.imgflip.com/2/2gnnjh.jpg", caption: "DevOps asking why my model needs 32GB RAM:", subtitle: "\"It's for the embeddings\"" },
-                    { img: "https://i.imgflip.com/4/38el31.jpg", caption: "CI/CD pipeline after my 47th push:", subtitle: "\"We need to talk about your commit messages\"" },
-                    { img: "https://i.imgflip.com/2/4jxxr6.jpg", caption: "Deploying ML model to production:", subtitle: "\"How hard can it be?\" - Famous last words" }
+                    { img: "https://i.imgflip.com/3qqcim.jpg", caption: "Model works locally, fails in production:", subtitle: "\"Works on my machine ¯\\_(ツ)_/¯\"" },
+                    { img: "https://i.imgflip.com/2gnnjh.jpg", caption: "DevOps asking why my model needs 32GB RAM:", subtitle: "\"It's for the embeddings\"" },
+                    { img: "https://i.imgflip.com/38el31.jpg", caption: "CI/CD pipeline after my 47th push:", subtitle: "\"We need to talk about your commit messages\"" },
+                    { img: "https://i.imgflip.com/4jxxr6.jpg", caption: "Deploying ML model to production:", subtitle: "\"How hard can it be?\" - Famous last words" }
                 ];
 
                 function showRandomMeme() {
