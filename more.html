@@ -91,16 +91,63 @@
                 </div>
             </section>
 
-            <!-- Fun Section with Meme -->
+            <!-- Fun Section with Random Meme -->
             <section class="meme-section fade-in"
                 style="text-align: center; margin-top: 4rem; padding: 2rem; background: #f8fafc; border-radius: 8px;">
-                <p style="font-size: 1.2rem; color: #4a5568; margin-bottom: 1rem;">When the model finally converges
-                    after 47 failed experiments:</p>
-                <img src="https://i.imgflip.com/3si4.jpg" alt="Success Kid Meme"
+                <p id="meme-caption" style="font-size: 1.1rem; color: #4a5568; margin-bottom: 1rem;"></p>
+                <img id="meme-image" alt="ML Meme"
                     style="max-width: 300px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                <p style="font-size: 0.9rem; color: #718096; margin-top: 1rem; font-style: italic;">"It's not a bug,
-                    it's a feature in training"</p>
+                <p id="meme-subtitle" style="font-size: 0.85rem; color: #718096; margin-top: 1rem; font-style: italic;">
+                </p>
+                <button onclick="showRandomMeme()"
+                    style="margin-top: 1rem; padding: 0.5rem 1rem; background: #1a202c; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Another
+                    one</button>
             </section>
+
+            <script>
+                const memes = [
+                    {
+                        img: "https://i.imgflip.com/3si4.jpg",
+                        caption: "When the model finally converges after 47 failed experiments:",
+                        subtitle: "\"It's not a bug, it's a feature in training\""
+                    },
+                    {
+                        img: "https://i.imgflip.com/1bij.jpg",
+                        caption: "Me explaining why my model needs 8 GPUs:",
+                        subtitle: "\"Trust me, it's for the batch size\""
+                    },
+                    {
+                        img: "https://i.imgflip.com/30b1gx.jpg",
+                        caption: "When you finally understand backpropagation:",
+                        subtitle: "\"It's just chain rule bro\""
+                    },
+                    {
+                        img: "https://i.imgflip.com/1ur9b0.jpg",
+                        caption: "Adding more layers to my neural network:",
+                        subtitle: "\"If it doesn't work, make it deeper\""
+                    },
+                    {
+                        img: "https://i.imgflip.com/2za3u1.jpg",
+                        caption: "When the loss suddenly goes to NaN:",
+                        subtitle: "\"We were so close to greatness\""
+                    },
+                    {
+                        img: "https://i.imgflip.com/26am.jpg",
+                        caption: "Debugging ML code at 3am:",
+                        subtitle: "\"The gradient vanished... just like my sleep\""
+                    }
+                ];
+
+                function showRandomMeme() {
+                    const meme = memes[Math.floor(Math.random() * memes.length)];
+                    document.getElementById('meme-caption').textContent = meme.caption;
+                    document.getElementById('meme-image').src = meme.img;
+                    document.getElementById('meme-subtitle').textContent = meme.subtitle;
+                }
+
+                // Show random meme on page load
+                showRandomMeme();
+            </script>
         </main>
 
         <footer>
