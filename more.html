@@ -106,36 +106,49 @@
 
             <script>
                 const memes = [
-                    {
-                        img: "https://i.imgflip.com/3si4.jpg",
-                        caption: "When the model finally converges after 47 failed experiments:",
-                        subtitle: "\"It's not a bug, it's a feature in training\""
-                    },
-                    {
-                        img: "https://i.imgflip.com/1bij.jpg",
-                        caption: "Me explaining why my model needs 8 GPUs:",
-                        subtitle: "\"Trust me, it's for the batch size\""
-                    },
-                    {
-                        img: "https://i.imgflip.com/30b1gx.jpg",
-                        caption: "When you finally understand backpropagation:",
-                        subtitle: "\"It's just chain rule bro\""
-                    },
-                    {
-                        img: "https://i.imgflip.com/1ur9b0.jpg",
-                        caption: "Adding more layers to my neural network:",
-                        subtitle: "\"If it doesn't work, make it deeper\""
-                    },
-                    {
-                        img: "https://i.imgflip.com/2za3u1.jpg",
-                        caption: "When the loss suddenly goes to NaN:",
-                        subtitle: "\"We were so close to greatness\""
-                    },
-                    {
-                        img: "https://i.imgflip.com/26am.jpg",
-                        caption: "Debugging ML code at 3am:",
-                        subtitle: "\"The gradient vanished... just like my sleep\""
-                    }
+                    // General ML
+                    { img: "https://i.imgflip.com/3si4.jpg", caption: "When the model finally converges after 47 failed experiments:", subtitle: "\"It's not a bug, it's a feature in training\"" },
+                    { img: "https://i.imgflip.com/1bij.jpg", caption: "Me explaining why my model needs 8 GPUs:", subtitle: "\"Trust me, it's for the batch size\"" },
+                    { img: "https://i.imgflip.com/2za3u1.jpg", caption: "When the loss suddenly goes to NaN:", subtitle: "\"We were so close to greatness\"" },
+                    { img: "https://i.imgflip.com/26am.jpg", caption: "Debugging ML code at 3am:", subtitle: "\"The gradient vanished... just like my sleep\"" },
+                    { img: "https://i.imgflip.com/4t0m5.jpg", caption: "Senior ML engineer reviewing my first model:", subtitle: "\"You trained on test data, didn't you?\"" },
+                    { img: "https://i.imgflip.com/21uy0f.jpg", caption: "Training data vs Real world data:", subtitle: "\"Why doesn't it work in production?!\"" },
+
+                    // Deep Learning
+                    { img: "https://i.imgflip.com/30b1gx.jpg", caption: "When you finally understand backpropagation:", subtitle: "\"It's just chain rule bro\"" },
+                    { img: "https://i.imgflip.com/1ur9b0.jpg", caption: "Adding more layers to my neural network:", subtitle: "\"If it doesn't work, make it deeper\"" },
+                    { img: "https://i.imgflip.com/1g8my4.jpg", caption: "When validation accuracy > training accuracy:", subtitle: "\"Something's wrong, I can feel it\"" },
+                    { img: "https://i.imgflip.com/9ehk.jpg", caption: "When someone asks why I chose 42 epochs:", subtitle: "\"It's the answer to everything\"" },
+                    { img: "https://i.imgflip.com/1otk96.jpg", caption: "Me after reading a single ML paper:", subtitle: "\"I'm basically a researcher now\"" },
+
+                    // Transformers & Attention
+                    { img: "https://i.imgflip.com/2hgfw.jpg", caption: "Me pretending to understand attention mechanisms:", subtitle: "\"Yes, I totally get the math\"" },
+                    { img: "https://i.imgflip.com/4acd7.jpg", caption: "Attention is all you need:", subtitle: "\"But have you tried more attention?\"" },
+                    { img: "https://i.imgflip.com/1bhw.jpg", caption: "My transformer after 100B parameters:", subtitle: "\"I am become GPT, destroyer of benchmarks\"" },
+                    { img: "https://i.imgflip.com/1o00in.jpg", caption: "Trying to fine-tune a 70B model on my laptop:", subtitle: "\"Memory go brrr... then crash\"" },
+
+                    // Computer Vision
+                    { img: "https://i.imgflip.com/3lmzyx.jpg", caption: "CNN detecting a stop sign as 45mph speed limit:", subtitle: "\"Close enough\"" },
+                    { img: "https://i.imgflip.com/2p3dw0.jpg", caption: "When YOLO detects everything as a person:", subtitle: "\"That's a lamp, but sure\"" },
+                    { img: "https://i.imgflip.com/4/7e3qb.jpg", caption: "Training object detection for 3 days:", subtitle: "\"mAP: 0.02... still worth it\"" },
+
+                    // NLP & RAG
+                    { img: "https://i.imgflip.com/2/1c1uej.jpg", caption: "My chatbot responding to any question:", subtitle: "\"I don't have enough context for that\"" },
+                    { img: "https://i.imgflip.com/4/1ur9b0.jpg", caption: "RAG pipeline finding relevant chunks:", subtitle: "\"Is this... semantically similar?\"" },
+                    { img: "https://i.imgflip.com/2/3oevdk.jpg", caption: "LLM hallucinating confidently:", subtitle: "\"I made it up, but I said it with conviction\"" },
+                    { img: "https://i.imgflip.com/4/14y7ls.jpg", caption: "My embeddings after 5 hours of training:", subtitle: "\"Everything is in the same cluster\"" },
+
+                    // PyTorch & Python
+                    { img: "https://i.imgflip.com/4/3pnmg.jpg", caption: "import torch as tf:", subtitle: "\"Some people just want to watch the world burn\"" },
+                    { img: "https://i.imgflip.com/2/52wv.jpg", caption: "Forgetting .to(device) for the 100th time:", subtitle: "\"Expected cuda:0 but got cpu\"" },
+                    { img: "https://i.imgflip.com/4/1h7in3.jpg", caption: "Python at 3am:", subtitle: "\"IndentationError: expected an indented block\"" },
+                    { img: "https://i.imgflip.com/2/13yvm5.jpg", caption: "PyTorch vs TensorFlow debates:", subtitle: "\"Why not both?\" said no one ever" },
+
+                    // MLOps & Deployment
+                    { img: "https://i.imgflip.com/4/3qqcim.jpg", caption: "Model works locally, fails in production:", subtitle: "\"Works on my machine ¯\\_(ツ)_/¯\"" },
+                    { img: "https://i.imgflip.com/2/2gnnjh.jpg", caption: "DevOps asking why my model needs 32GB RAM:", subtitle: "\"It's for the embeddings\"" },
+                    { img: "https://i.imgflip.com/4/38el31.jpg", caption: "CI/CD pipeline after my 47th push:", subtitle: "\"We need to talk about your commit messages\"" },
+                    { img: "https://i.imgflip.com/2/4jxxr6.jpg", caption: "Deploying ML model to production:", subtitle: "\"How hard can it be?\" - Famous last words" }
                 ];
 
                 function showRandomMeme() {
