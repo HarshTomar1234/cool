@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Implementations - Harsh Tomar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="research.html" class="nav-link active">Research</a>
+            <a href="more.html" class="nav-link">More</a>
+        </nav>
+
+        <main>
+            <section class="research-implementations fade-in">
+                <h2>Research Paper Implementations</h2>
+                <p class="section-desc">From-scratch PyTorch implementations of cutting-edge AI research papers with
+                    detailed architectural breakdowns</p>
+
+                <!-- VLMverse -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/VLMverse" target="_blank">VLMverse:
+                                Vision-Language Models</a></h3>
+                        <div class="project-meta">
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Complete PyTorch implementation of PaLiGemma vision-language model
+                        combining Google's Gemma language model with SigLIP vision encoder. Features detailed
+                        architectural breakdowns, clean educational code, and comprehensive documentation for multimodal
+                        AI understanding.</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/VLMverse/main/images/VLMs%20architecture.png"
+                            alt="VLM Architecture">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/VLMverse/main/images/PaliGemma%203B%20VLM%20implementation%20.png"
+                            alt="PaLiGemma Architecture">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/VLMverse/main/images/SigLip%20ViT.png"
+                            alt="SigLIP Vision Transformer">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/VLMverse/main/images/RoPE%20embeddings.png"
+                            alt="RoPE Embeddings">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>Architecture Components</h4>
+                        <ul>
+                            <li><strong>SigLIP Vision Encoder:</strong> Processes images into embeddings using Vision
+                                Transformer with 16×16 patches, generating 196 tokens for 224×224 images</li>
+                            <li><strong>Gemma Language Model:</strong> Decoder-only architecture with RMSNorm, GeLU
+                                activations, Rotary Position Encoding (RoPE), and grouped-query attention</li>
+                            <li><strong>Rotary Position Encoding:</strong> Sophisticated position encoding applying
+                                rotation matrices to query/key vectors</li>
+                            <li><strong>KV-Cache Mechanism:</strong> Efficient autoregressive inference with cached
+                                key-value pairs for faster generation</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">PaLiGemma</span>
+                                <span class="metric-label">VLM Model</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">SigLIP</span>
+                                <span class="metric-label">Vision Encoder</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Gemma</span>
+                                <span class="metric-label">Language Model</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">RoPE</span>
+                                <span class="metric-label">Position Encoding</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">PyTorch • Transformers • SigLIP • Gemma • RoPE • KV-Cache • Vision-Language
+                        Models</div>
+                </div>
+
+                <!-- Vision Transformer -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/vision_transformer-ViT-" target="_blank">Vision
+                                Transformer (ViT)</a></h3>
+                        <div class="project-meta">
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Complete PyTorch implementation of Vision Transformer from "An Image is
+                        Worth 16x16 Words" paper. Includes training pipelines for CIFAR-10 and ImageNet with patch
+                        embedding, multi-head self-attention, position encodings, and comprehensive architectural
+                        visualizations.</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/vision_transformer-ViT-/main/imgs/patch_embeddings.png"
+                            alt="Patch Embeddings">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/vision_transformer-ViT-/main/imgs/mha.png"
+                            alt="Multi-Head Attention">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/vision_transformer-ViT-/main/imgs/classifier.png"
+                            alt="ViT Classifier">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/vision_transformer-ViT-/main/imgs/layernorm.png"
+                            alt="Layer Normalization">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>Architecture Implementation</h4>
+                        <ul>
+                            <li><strong>Patch Embedding:</strong> Divides images into 16×16 non-overlapping patches,
+                                linearly projects to embedding dimension using Conv2d for efficiency</li>
+                            <li><strong>Multi-Head Self Attention:</strong> Jointly attends to information from
+                                different representation subspaces with scaled dot-product attention</li>
+                            <li><strong>MLP Block:</strong> Feed-forward network with GELU activation applied after
+                                attention mechanism</li>
+                            <li><strong>Class Token:</strong> Learnable embedding prepended to sequence for
+                                classification, similar to BERT's [CLS] token</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">16×16</span>
+                                <span class="metric-label">Patch Size</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">12 Layers</span>
+                                <span class="metric-label">Transformer Blocks</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">768</span>
+                                <span class="metric-label">Embedding Dim</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">12 Heads</span>
+                                <span class="metric-label">Attention Heads</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">PyTorch • Vision Transformer • Self-Attention • CIFAR-10 • ImageNet • GELU
+                    </div>
+                </div>
+
+                <!-- PyTorch LoRA-QLoRA -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/PyTorch-LoRA-QLoRA" target="_blank">PyTorch LoRA
+                                & QLoRA</a></h3>
+                        <div class="project-meta">
+                            <span class="year">2024</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Pure PyTorch implementations of LoRA and QLoRA for memory-efficient
+                        fine-tuning of large language models and vision transformers. Features custom training scripts,
+                        4-bit quantization, and practical examples achieving 65-85% memory reduction while maintaining
+                        performance.</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/PyTorch-LoRA-QLoRA/main/images/lora_architecture.svg"
+                            alt="LoRA Architecture">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/PyTorch-LoRA-QLoRA/main/images/qlora_architecture.svg"
+                            alt="QLoRA Architecture">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/PyTorch-LoRA-QLoRA/main/images/memory_comparison.svg"
+                            alt="Memory Comparison">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>LoRA Architecture</h4>
+                        <ul>
+                            <li><strong>Low-Rank Adaptation:</strong> Injects trainable rank decomposition matrices (A,
+                                B) into frozen pre-trained weights W</li>
+                            <li><strong>Parameter Efficiency:</strong> Trains &lt;1% of parameters with rank r typically
+                                8,
+                                16, or 32</li>
+                            <li><strong>Memory Reduction:</strong> 65% reduction for BERT, 50% for LLaMA-7B</li>
+                        </ul>
+
+                        <h4>QLoRA Innovations</h4>
+                        <ul>
+                            <li><strong>4-bit NF4 Quantization:</strong> Normal Float data type optimized for LLM weight
+                                distributions</li>
+                            <li><strong>Double Quantization:</strong> Quantizes quantization constants for additional
+                                memory savings</li>
+                            <li><strong>Memory Efficiency:</strong> 85% reduction enabling LLaMA-65B fine-tuning on
+                                consumer GPUs</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">85%</span>
+                                <span class="metric-label">Memory Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">&lt;1%</span>
+                                <span class="metric-label">Trainable Params</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">4-bit</span>
+                                <span class="metric-label">Quantization</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">NF4</span>
+                                <span class="metric-label">Data Type</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">PyTorch • LoRA • QLoRA • 4-bit Quantization • PEFT • Fine-tuning • Memory
+                        Optimization</div>
+                </div>
+
+                <!-- Reasoning LLMs -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/Reasoning-llms-" target="_blank">Reasoning
+                                LLMs</a></h3>
+                        <div class="project-meta">
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Core concepts of reasoning in Large Language Models implemented from
+                        scratch. Explores inference-time compute scaling, reinforcement learning approaches,
+                        chain-of-thought mechanisms, and advanced reasoning techniques for building more capable AI
+                        systems.</p>
+
+                    <div class="project-images-grid">
+                        <img src="assets/images/test_time_compute.png" alt="Reasoning Test-Time Compute Scaling Laws">
+                        <img src="https://raw.githubusercontent.com/dair-ai/Prompt-Engineering-Guide/main/img/cot.png"
+                            alt="Chain of Thought Prompting">
+                        <img src="assets/images/beam_search.png" alt="Beam Search Decoding Tree">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>Inference-Time Compute Scaling</h4>
+                        <ul>
+                            <li><strong>Zero-Shot Prompting:</strong> Applied to Llama 3.2 built from scratch for
+                                baseline reasoning capabilities</li>
+                            <li><strong>Beam Search:</strong> Demonstration of search-based decoding strategies for
+                                improved output quality</li>
+                            <li><strong>Chain-of-Thought:</strong> Multi-step reasoning with explicit thought process
+                            </li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">Llama 3.2</span>
+                                <span class="metric-label">Base Model</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">CoT</span>
+                                <span class="metric-label">Chain-of-Thought</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">RL</span>
+                                <span class="metric-label">Reinforcement Learning</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Beam Search</span>
+                                <span class="metric-label">Decoding Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">PyTorch • Reasoning • LLMs • Reinforcement Learning • Chain-of-Thought •
+                        Llama 3.2</div>
+                </div>
+            </section>
+
+            <!-- Technical Writings -->
+            <section class="blogs fade-in">
+                <h2>Technical Writings</h2>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <h3><a href="https://www.notion.so/Tennis-Vision-25b4df040c1480d1840ad41d281672f3"
+                                target="_blank">Tennis Vision: Deep Dive</a></h3>
+                        <p>Comprehensive analysis of building an AI-powered tennis analysis system with computer vision
+                            techniques, model training, and performance optimization strategies.</p>
+                        <span class="status">In Progress</span>
+                    </div>
+
+                    <div class="blog-card">
+                        <h3><a href="https://www.notion.so/Core-Concepts-of-Reasoning-in-LLMs-from-Scratch-1de4df040c14804b9b64f034e181aa75"
+                                target="_blank">Reasoning in LLMs from Scratch</a></h3>
+                        <p>Exploring core concepts of reasoning capabilities in Large Language Models, implementation
+                            details, and architectural considerations for building reasoning systems.</p>
+                        <span class="status">In Progress</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built with curiosity and code • <a href="https://github.com/HarshTomar1234/cool" target="_blank">View
+                    Source</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
