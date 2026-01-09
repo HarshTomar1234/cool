@@ -994,18 +994,19 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Featured Previews Grid */
+/* Featured Previews Grid - Stacked Layout */
 .featured-previews-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
-@media (max-width: 768px) {
-    .featured-previews-grid {
-        grid-template-columns: 1fr;
-    }
+.featured-preview .preview-media {
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    background: #000;
 }
 
 /* Update existing elements to use CSS variables */
