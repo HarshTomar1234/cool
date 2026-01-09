@@ -994,6 +994,20 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Featured Previews Grid */
+.featured-previews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .featured-previews-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Update existing elements to use CSS variables */
 .preview-card {
     background: var(--bg-secondary);
