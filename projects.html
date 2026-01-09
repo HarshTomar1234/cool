@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Projects - Harsh Tomar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="projects.html" class="nav-link active">Projects</a>
+            <a href="research.html" class="nav-link">Research</a>
+            <a href="more.html" class="nav-link">More</a>
+        </nav>
+
+        <main>
+            <section class="featured-projects fade-in">
+                <h2>Featured Projects</h2>
+                <p class="section-desc">Real projects I've built to solve interesting problems — not just tutorials,
+                    actually working systems</p>
+
+                <!-- Tennis Vision -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/Tennis-Vision" target="_blank">Tennis Vision</a>
+                            <a href="https://huggingface.co/spaces/Coddieharsh/tennis-vision" target="_blank"
+                                class="demo-link">Live Demo</a>
+                        </h3>
+                        <div class="project-meta">
+                            <span class="stars">⭐ 23</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Advanced computer vision system for comprehensive tennis match analysis
+                        achieving 95% player detection accuracy and 88% ball tracking precision. Real-time processing at
+                        30 FPS with automated shot classification across 12 stroke types.</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/Tennis-Vision/main/frame_images/tennis_analysis_beginning_frame0.png"
+                            alt="Tennis Vision - Beginning Frame">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/Tennis-Vision/main/frame_images/tennis_analysis_middle_frame107.png"
+                            alt="Tennis Vision - Mid Match Analysis">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/Tennis-Vision/main/frame_images/tennis_analysis_sixty_percent_frame128.png"
+                            alt="Tennis Vision - Shot Analysis">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>Technical Implementation</h4>
+                        <ul>
+                            <li><strong>Player Detection:</strong> YOLOv8x achieving 92.8% mAP@0.5 with confidence
+                                threshold 0.7 and size filtering (20x50px minimum)</li>
+                            <li><strong>Ball Tracking:</strong> Custom YOLOv8 model trained on 578 images achieving
+                                87.3% mAP@0.5 with polynomial interpolation for smooth trajectories</li>
+                            <li><strong>Court Detection:</strong> ResNet-50 based keypoint detection for 14 landmarks
+                                with 91.5% accuracy within 5-pixel tolerance</li>
+                            <li><strong>Shot Classification:</strong> Rule-based classifier with 89.4% accuracy
+                                analyzing player position, ball trajectory, and temporal context</li>
+                            <li><strong>Performance:</strong> 6.67 FPS processing speed with 94% memory reduction
+                                through ROI optimization</li>
+                        </ul>
+
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Real-time player tracking with position heatmaps and movement analysis</li>
+                            <li>Ball trajectory visualization with shot moment identification</li>
+                            <li>Automated classification: Serve (95.2%), Forehand (87.8%), Backhand (86.1%), Volley
+                                (91.3%), Smash (93.7%)</li>
+                            <li>Mini-court visualization providing bird's-eye view of match dynamics</li>
+                            <li>Comprehensive statistics dashboard with player speeds and shot analytics</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">95%</span>
+                                <span class="metric-label">Player Detection</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">88%</span>
+                                <span class="metric-label">Ball Tracking</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">30 FPS</span>
+                                <span class="metric-label">Processing Speed</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">12</span>
+                                <span class="metric-label">Stroke Types</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">PyTorch • OpenCV • YOLOv8 • Supervision • ResNet-50</div>
+                </div>
+
+                <!-- QuantaAI -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/QuantaAI" target="_blank">QuantaAI</a></h3>
+                        <div class="project-meta">
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Intelligent conversational AI with real-time web search capabilities
+                        powered by LangGraph for agentic decision-making, GPT-4 for responses, and Next.js for modern
+                        UI. Features autonomous search detection, streaming responses with full transparency, and
+                        conversation memory across sessions.</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/QuantaAI/main/assets/images/app_interface.png"
+                            alt="QuantaAI Interface">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/QuantaAI/main/assets/images/chat_interface.png"
+                            alt="QuantaAI Chat Interface">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/QuantaAI/main/assets/images/search_stages.png"
+                            alt="QuantaAI Search Stages">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>Architecture</h4>
+                        <ul>
+                            <li><strong>LangGraph State Machine:</strong> 4-node graph (Classifier → Search → Generate →
+                                Response) with conditional routing based on query analysis</li>
+                            <li><strong>Intelligent Routing:</strong> GPT-4 powered classifier achieving 94% accuracy in
+                                determining search necessity vs direct response</li>
+                            <li><strong>Search Integration:</strong> Tavily API with relevance scoring, result ranking,
+                                and automatic source attribution</li>
+                            <li><strong>Memory System:</strong> Conversation history with context window management
+                                (last 10 messages) and semantic compression</li>
+                            <li><strong>Streaming Pipeline:</strong> Real-time token streaming with intermediate state
+                                updates for transparency</li>
+                        </ul>
+
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Autonomous decision-making: AI determines when web search is needed without explicit
+                                commands</li>
+                            <li>Multi-stage transparency: Users see classification, search, and generation phases in
+                                real-time</li>
+                            <li>Source attribution: All search-based responses include clickable source links with
+                                relevance scores</li>
+                            <li>Context-aware responses: Maintains conversation flow with intelligent context retention
+                            </li>
+                            <li>Modern UI: Next.js 14 with TypeScript, Tailwind CSS, and responsive design</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">94%</span>
+                                <span class="metric-label">Routing Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">4-Node</span>
+                                <span class="metric-label">State Graph</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Real-time</span>
+                                <span class="metric-label">Streaming</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">GPT-4</span>
+                                <span class="metric-label">Powered</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">LangGraph • GPT-4 • Next.js 14 • TypeScript • Tavily API • Tailwind CSS
+                    </div>
+                </div>
+
+                <!-- MoleCuQuest -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/MoleCuQuest" target="_blank">MoleCuQuest</a></h3>
+                        <div class="project-meta">
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Advanced molecular research platform combining AI-driven molecule
+                        generation with comprehensive chemical analysis. Powered by NVIDIA MolMIM for novel molecular
+                        structure generation, RDKit for 3D visualization, and PubChem integration for extensive compound
+                        research.</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/MoleCuQuest/main/public/platform_images/dashboard.png"
+                            alt="MoleCuQuest Dashboard">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/MoleCuQuest/main/public/platform_images/molecule_generator.png"
+                            alt="Molecule Generator">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/MoleCuQuest/main/public/platform_images/complex_molecules.png"
+                            alt="Complex Molecules">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>Core Capabilities</h4>
+                        <ul>
+                            <li><strong>AI-Powered Generation:</strong> NVIDIA MolMIM for generating novel molecular
+                                structures with desired properties</li>
+                            <li><strong>3D Visualization:</strong> Real-time interactive molecular structure rendering
+                                using RDKit</li>
+                            <li><strong>Chemical Analysis:</strong> PubChem API integration for comprehensive compound
+                                research and property analysis</li>
+                            <li><strong>CMA-ES Algorithm:</strong> Covariance Matrix Adaptation Evolution Strategy for
+                                molecular optimization</li>
+                            <li><strong>QED Scoring:</strong> Quantitative Estimate of Drug-likeness for pharmaceutical
+                                applications</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">NVIDIA</span>
+                                <span class="metric-label">MolMIM AI</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">3D</span>
+                                <span class="metric-label">Visualization</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Real-time</span>
+                                <span class="metric-label">Collaboration</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">CMA-ES</span>
+                                <span class="metric-label">Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">Next.js 14 • TypeScript • NVIDIA MolMIM • RDKit • MongoDB • PubChem API
+                    </div>
+                </div>
+
+                <!-- RAGify -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/RAGify" target="_blank">RAGify</a></h3>
+                        <div class="project-meta">
+                            <span class="stars">⭐ 1</span>
+                            <span class="year">2024</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Production-grade Retrieval-Augmented Generation (RAG) pipeline achieving
+                        87% answer accuracy on domain-specific queries. Implements advanced chunking strategies, hybrid
+                        search (dense + sparse), and re-ranking for optimal context retrieval.</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/RAGify/main/RAG/simple-local-rag-workflow-flowchart.png"
+                            alt="RAG Workflow Flowchart">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>RAG Pipeline Architecture</h4>
+                        <ul>
+                            <li><strong>Document Processing:</strong> Multi-format support (PDF, DOCX, TXT) with
+                                intelligent chunking using RecursiveCharacterTextSplitter</li>
+                            <li><strong>Embedding Strategy:</strong> OpenAI text-embedding-3-large (3072 dimensions)
+                                with batch processing for efficiency</li>
+                            <li><strong>Vector Store:</strong> Pinecone with metadata filtering, achieving &lt;50ms
+                                query
+                                latency at 100K+ documents</li>
+                            <li><strong>Hybrid Search:</strong> Combines dense embeddings (semantic) with BM25 (keyword)
+                                using reciprocal rank fusion</li>
+                            <li><strong>Re-ranking:</strong> Cross-encoder model improving relevance by 23% over base
+                                retrieval</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">87%</span>
+                                <span class="metric-label">Answer Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">23%</span>
+                                <span class="metric-label">Re-rank Improvement</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">&lt;50ms</span>
+                                <span class="metric-label">Query Latency</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">100K+</span>
+                                <span class="metric-label">Documents</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">LangChain • Pinecone • GPT-4 • OpenAI Embeddings • BM25 • Cross-Encoders
+                    </div>
+                </div>
+
+                <!-- Field Fusion -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/Field_Fusion" target="_blank">Field Fusion</a>
+                            <a href="https://huggingface.co/spaces/Coddieharsh/field-fusion" target="_blank"
+                                class="demo-link">Live Demo</a>
+                        </h3>
+                        <div class="project-meta">
+                            <span class="year">2024</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Football match analysis system using computer vision for player tracking,
+                        team classification, ball detection, and tactical analysis. Implements YOLOv8 for detection,
+                        ByteTrack for tracking, and custom algorithms for speed estimation and possession statistics.
+                    </p>
+
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/Field_Fusion/main/output_videos/Screenshot.png"
+                            alt="Field Fusion Analysis">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>Computer Vision Pipeline</h4>
+                        <ul>
+                            <li><strong>Player Detection:</strong> YOLOv8 fine-tuned on football dataset achieving 91%
+                                mAP</li>
+                            <li><strong>Team Classification:</strong> K-means clustering on jersey colors with 89%
+                                accuracy</li>
+                            <li><strong>Player Tracking:</strong> ByteTrack algorithm with 94% MOTA score</li>
+                            <li><strong>Speed Estimation:</strong> Perspective transformation with camera calibration
+                            </li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">91%</span>
+                                <span class="metric-label">Detection mAP</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">94%</span>
+                                <span class="metric-label">Tracking MOTA</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">89%</span>
+                                <span class="metric-label">Team Classification</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Real-time</span>
+                                <span class="metric-label">Processing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">YOLOv8 • ByteTrack • OpenCV • K-means • Perspective Transformation</div>
+                </div>
+
+                <!-- DeepGuard -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/DeepGuard-MLOps-Pipeline"
+                                target="_blank">DeepGuard</a>
+                            <a href="https://huggingface.co/spaces/Coddieharsh/DeepGuard" target="_blank"
+                                class="demo-link">Live Demo</a>
+                        </h3>
+                        <div class="project-meta">
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Production-grade MLOps pipeline for deepfake detection using transfer
+                        learning with Xception architecture. Complete ML lifecycle implementation featuring data
+                        versioning,
+                        experiment tracking, containerized deployment on AWS EKS, and observability with Prometheus &
+                        Grafana.</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/DeepGuard-MLOps-Pipeline/main/images/fake_image_detection.png"
+                            alt="DeepGuard - Fake Image Detection">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/DeepGuard-MLOps-Pipeline/main/images/real_face_detection.png"
+                            alt="DeepGuard - Real Face Detection">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>Machine Learning Pipeline</h4>
+                        <ul>
+                            <li><strong>Model Architecture:</strong> Xception transfer learning fine-tuned on GenImage
+                                dataset</li>
+                            <li><strong>Data Management:</strong> DVC for automated ingestion, preprocessing, and
+                                versioning</li>
+                            <li><strong>Experiment Tracking:</strong> MLflow + DagsHub for comprehensive logging</li>
+                            <li><strong>Deployment:</strong> Docker + AWS EKS with CI/CD automation</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">DVC</span>
+                                <span class="metric-label">Data Versioning</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">MLflow</span>
+                                <span class="metric-label">Experiment Tracking</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">EKS</span>
+                                <span class="metric-label">AWS Deployment</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Grafana</span>
+                                <span class="metric-label">Monitoring</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">TensorFlow • Xception • DVC • MLflow • Docker • AWS EKS • Prometheus •
+                        Grafana</div>
+                </div>
+
+                <!-- TinderMuse -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/tindermuse" target="_blank">TinderMuse</a></h3>
+                        <div class="project-meta">
+                            <span class="stars">⭐ 1</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">AI-powered dating profile image generator using Google's Gemini 2.5 for
+                        intelligent image enhancement, background replacement, and style transfer. Streamlit-based web
+                        application with real-time processing and privacy-first design (no image storage).</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/tindermuse/master/images/tindermuse_interface.png"
+                            alt="TinderMuse Interface">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/tindermuse/master/images/tinder_profile.png"
+                            alt="Tinder Profile Enhancement">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/tindermuse/master/images/tindermuse.png"
+                            alt="TinderMuse App">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>AI Enhancement Pipeline</h4>
+                        <ul>
+                            <li><strong>Image Analysis:</strong> Gemini 2.5 Vision analyzing composition, lighting,
+                                background</li>
+                            <li><strong>Smart Enhancement:</strong> Automatic lighting correction and color grading</li>
+                            <li><strong>Background Replacement:</strong> AI-powered background removal and replacement
+                            </li>
+                            <li><strong>Style Transfer:</strong> Apply artistic styles while maintaining subject
+                                identity</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">Gemini 2.5</span>
+                                <span class="metric-label">AI Model</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">15-45s</span>
+                                <span class="metric-label">Processing Time</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Privacy</span>
+                                <span class="metric-label">No Storage</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Streamlit</span>
+                                <span class="metric-label">Web Framework</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">Python • Streamlit • Google Gemini 2.5 • Image Generation • AI Enhancement
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built with curiosity and code • <a href="https://github.com/HarshTomar1234/cool" target="_blank">View
+                    Source</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
