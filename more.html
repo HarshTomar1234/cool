@@ -114,50 +114,70 @@
             </section>
 
             <script>
+                // 50 ML/AI Memes with reliable image hosting
+                // Using picsum.photos for random images that always load
                 const memes = [
-                    // General ML
-                    { img: "https://i.imgflip.com/3si4.jpg", caption: "When the model finally converges after 47 failed experiments:", subtitle: "\"It's not a bug, it's a feature in training\"" },
-                    { img: "https://i.imgflip.com/1bij.jpg", caption: "Me explaining why my model needs 8 GPUs:", subtitle: "\"Trust me, it's for the batch size\"" },
-                    { img: "https://i.imgflip.com/2za3u1.jpg", caption: "When the loss suddenly goes to NaN:", subtitle: "\"We were so close to greatness\"" },
-                    { img: "https://i.imgflip.com/26am.jpg", caption: "Debugging ML code at 3am:", subtitle: "\"The gradient vanished... just like my sleep\"" },
-                    { img: "https://i.imgflip.com/4t0m5.jpg", caption: "Senior ML engineer reviewing my first model:", subtitle: "\"You trained on test data, didn't you?\"" },
-                    { img: "https://i.imgflip.com/21uy0f.jpg", caption: "Training data vs Real world data:", subtitle: "\"Why doesn't it work in production?!\"" },
+                    // General ML (1-10)
+                    { img: "https://picsum.photos/seed/ml1/300/300", caption: "When the model finally converges after 47 failed experiments:", subtitle: "\"It's not a bug, it's a feature in training\"" },
+                    { img: "https://picsum.photos/seed/ml2/300/300", caption: "Me explaining why my model needs 8 GPUs:", subtitle: "\"Trust me, it's for the batch size\"" },
+                    { img: "https://picsum.photos/seed/ml3/300/300", caption: "When the loss suddenly goes to NaN:", subtitle: "\"We were so close to greatness\"" },
+                    { img: "https://picsum.photos/seed/ml4/300/300", caption: "Debugging ML code at 3am:", subtitle: "\"The gradient vanished... just like my sleep\"" },
+                    { img: "https://picsum.photos/seed/ml5/300/300", caption: "Senior ML engineer reviewing my first model:", subtitle: "\"You trained on test data, didn't you?\"" },
+                    { img: "https://picsum.photos/seed/ml6/300/300", caption: "Training data vs Real world data:", subtitle: "\"Why doesn't it work in production?!\"" },
+                    { img: "https://picsum.photos/seed/ml7/300/300", caption: "When you find a bug that was there for weeks:", subtitle: "\"How did this ever work?\"" },
+                    { img: "https://picsum.photos/seed/ml8/300/300", caption: "My model's accuracy on training vs test data:", subtitle: "\"We don't talk about overfitting\"" },
+                    { img: "https://picsum.photos/seed/ml9/300/300", caption: "When someone says they got 99% accuracy:", subtitle: "\"On what data though?\"" },
+                    { img: "https://picsum.photos/seed/ml10/300/300", caption: "Feature engineering at midnight:", subtitle: "\"Just one more column...\"" },
 
-                    // Deep Learning
-                    { img: "https://i.imgflip.com/30b1gx.jpg", caption: "When you finally understand backpropagation:", subtitle: "\"It's just chain rule bro\"" },
-                    { img: "https://i.imgflip.com/1ur9b0.jpg", caption: "Adding more layers to my neural network:", subtitle: "\"If it doesn't work, make it deeper\"" },
-                    { img: "https://i.imgflip.com/1g8my4.jpg", caption: "When validation accuracy > training accuracy:", subtitle: "\"Something's wrong, I can feel it\"" },
-                    { img: "https://i.imgflip.com/9ehk.jpg", caption: "When someone asks why I chose 42 epochs:", subtitle: "\"It's the answer to everything\"" },
-                    { img: "https://i.imgflip.com/1otk96.jpg", caption: "Me after reading a single ML paper:", subtitle: "\"I'm basically a researcher now\"" },
+                    // Deep Learning (11-20)
+                    { img: "https://picsum.photos/seed/dl1/300/300", caption: "When you finally understand backpropagation:", subtitle: "\"It's just chain rule bro\"" },
+                    { img: "https://picsum.photos/seed/dl2/300/300", caption: "Adding more layers to my neural network:", subtitle: "\"If it doesn't work, make it deeper\"" },
+                    { img: "https://picsum.photos/seed/dl3/300/300", caption: "When validation accuracy > training accuracy:", subtitle: "\"Something's wrong, I can feel it\"" },
+                    { img: "https://picsum.photos/seed/dl4/300/300", caption: "When someone asks why I chose 42 epochs:", subtitle: "\"It's the answer to everything\"" },
+                    { img: "https://picsum.photos/seed/dl5/300/300", caption: "Me after reading a single ML paper:", subtitle: "\"I'm basically a researcher now\"" },
+                    { img: "https://picsum.photos/seed/dl6/300/300", caption: "Trying to understand the math in papers:", subtitle: "\"I know some of these symbols\"" },
+                    { img: "https://picsum.photos/seed/dl7/300/300", caption: "When your neural network finally learns:", subtitle: "\"He's beginning to believe\"" },
+                    { img: "https://picsum.photos/seed/dl8/300/300", caption: "Explaining deep learning to non-tech friends:", subtitle: "\"It's like a brain... but not really\"" },
+                    { img: "https://picsum.photos/seed/dl9/300/300", caption: "When you forget to normalize your data:", subtitle: "\"Why is everything so... big?\"" },
+                    { img: "https://picsum.photos/seed/dl10/300/300", caption: "Batch size: 1 vs Batch size: 1024:", subtitle: "\"My GPU can handle it... right?\"" },
 
-                    // Transformers & Attention
-                    { img: "https://i.imgflip.com/2hgfw.jpg", caption: "Me pretending to understand attention mechanisms:", subtitle: "\"Yes, I totally get the math\"" },
-                    { img: "https://i.imgflip.com/4acd7.jpg", caption: "Attention is all you need:", subtitle: "\"But have you tried more attention?\"" },
-                    { img: "https://i.imgflip.com/1bhw.jpg", caption: "My transformer after 100B parameters:", subtitle: "\"I am become GPT, destroyer of benchmarks\"" },
-                    { img: "https://i.imgflip.com/1o00in.jpg", caption: "Trying to fine-tune a 70B model on my laptop:", subtitle: "\"Memory go brrr... then crash\"" },
+                    // Transformers & LLMs (21-30)
+                    { img: "https://picsum.photos/seed/llm1/300/300", caption: "Me pretending to understand attention:", subtitle: "\"Yes, I totally get the math\"" },
+                    { img: "https://picsum.photos/seed/llm2/300/300", caption: "Attention is all you need:", subtitle: "\"But have you tried more attention?\"" },
+                    { img: "https://picsum.photos/seed/llm3/300/300", caption: "My transformer after 100B parameters:", subtitle: "\"I am become GPT, destroyer of benchmarks\"" },
+                    { img: "https://picsum.photos/seed/llm4/300/300", caption: "Trying to fine-tune a 70B model on my laptop:", subtitle: "\"Memory go brrr... then crash\"" },
+                    { img: "https://picsum.photos/seed/llm5/300/300", caption: "Reading 'Attention is All You Need':", subtitle: "\"I'll just read the abstract\"" },
+                    { img: "https://picsum.photos/seed/llm6/300/300", caption: "When your context window is too small:", subtitle: "\"I forgor 💀\"" },
+                    { img: "https://picsum.photos/seed/llm7/300/300", caption: "GPT-4 vs my fine-tuned model:", subtitle: "\"We are not the same\"" },
+                    { img: "https://picsum.photos/seed/llm8/300/300", caption: "Multi-head attention be like:", subtitle: "\"8 heads are better than 1\"" },
+                    { img: "https://picsum.photos/seed/llm9/300/300", caption: "Prompt engineering be like:", subtitle: "\"Please, I beg you, just output JSON\"" },
+                    { img: "https://picsum.photos/seed/llm10/300/300", caption: "When the LLM ignores your system prompt:", subtitle: "\"I said be helpful, not creative!\"" },
 
-                    // Computer Vision
-                    { img: "https://i.imgflip.com/3lmzyx.jpg", caption: "CNN detecting a stop sign as 45mph speed limit:", subtitle: "\"Close enough\"" },
-                    { img: "https://i.imgflip.com/2p3dw0.jpg", caption: "When YOLO detects everything as a person:", subtitle: "\"That's a lamp, but sure\"" },
-                    { img: "https://i.imgflip.com/7e3qb.jpg", caption: "Training object detection for 3 days:", subtitle: "\"mAP: 0.02... still worth it\"" },
+                    // Computer Vision (31-38)
+                    { img: "https://picsum.photos/seed/cv1/300/300", caption: "CNN detecting stop sign as 45mph:", subtitle: "\"Close enough\"" },
+                    { img: "https://picsum.photos/seed/cv2/300/300", caption: "When YOLO detects everything as a person:", subtitle: "\"That's a lamp, but sure\"" },
+                    { img: "https://picsum.photos/seed/cv3/300/300", caption: "Training object detection for 3 days:", subtitle: "\"mAP: 0.02... still worth it\"" },
+                    { img: "https://picsum.photos/seed/cv4/300/300", caption: "Data augmentation be like:", subtitle: "\"Same image, rotated 45 times\"" },
+                    { img: "https://picsum.photos/seed/cv5/300/300", caption: "When classifier works on cats but not dogs:", subtitle: "\"We specialize in cats\"" },
+                    { img: "https://picsum.photos/seed/cv6/300/300", caption: "ResNet skip connections:", subtitle: "\"Just skip the problem entirely\"" },
+                    { img: "https://picsum.photos/seed/cv7/300/300", caption: "When you need more training data:", subtitle: "\"Google Images, here I come\"" },
+                    { img: "https://picsum.photos/seed/cv8/300/300", caption: "Image preprocessing gone wrong:", subtitle: "\"I think we lost some pixels\"" },
 
-                    // NLP & RAG
-                    { img: "https://i.imgflip.com/1c1uej.jpg", caption: "My chatbot responding to any question:", subtitle: "\"I don't have enough context for that\"" },
-                    { img: "https://i.imgflip.com/1ur9b0.jpg", caption: "RAG pipeline finding relevant chunks:", subtitle: "\"Is this... semantically similar?\"" },
-                    { img: "https://i.imgflip.com/3oevdk.jpg", caption: "LLM hallucinating confidently:", subtitle: "\"I made it up, but I said it with conviction\"" },
-                    { img: "https://i.imgflip.com/14y7ls.jpg", caption: "My embeddings after 5 hours of training:", subtitle: "\"Everything is in the same cluster\"" },
+                    // RAG & NLP (39-44)
+                    { img: "https://picsum.photos/seed/rag1/300/300", caption: "My chatbot responding to any question:", subtitle: "\"I don't have enough context\"" },
+                    { img: "https://picsum.photos/seed/rag2/300/300", caption: "RAG pipeline finding relevant chunks:", subtitle: "\"Is this... semantically similar?\"" },
+                    { img: "https://picsum.photos/seed/rag3/300/300", caption: "LLM hallucinating confidently:", subtitle: "\"I made it up with conviction\"" },
+                    { img: "https://picsum.photos/seed/rag4/300/300", caption: "My embeddings after 5 hours of training:", subtitle: "\"Everything is in the same cluster\"" },
+                    { img: "https://picsum.photos/seed/rag5/300/300", caption: "Vector databases be like:", subtitle: "\"It's just arrays with extra steps\"" },
+                    { img: "https://picsum.photos/seed/rag6/300/300", caption: "Chunking strategy debates:", subtitle: "\"Just use 512 tokens bro\"" },
 
-                    // PyTorch & Python
-                    { img: "https://i.imgflip.com/3pnmg.jpg", caption: "import torch as tf:", subtitle: "\"Some people just want to watch the world burn\"" },
-                    { img: "https://i.imgflip.com/52wv.jpg", caption: "Forgetting .to(device) for the 100th time:", subtitle: "\"Expected cuda:0 but got cpu\"" },
-                    { img: "https://i.imgflip.com/1h7in3.jpg", caption: "Python at 3am:", subtitle: "\"IndentationError: expected an indented block\"" },
-                    { img: "https://i.imgflip.com/13yvm5.jpg", caption: "PyTorch vs TensorFlow debates:", subtitle: "\"Why not both?\" said no one ever" },
-
-                    // MLOps & Deployment
-                    { img: "https://i.imgflip.com/3qqcim.jpg", caption: "Model works locally, fails in production:", subtitle: "\"Works on my machine ¯\\_(ツ)_/¯\"" },
-                    { img: "https://i.imgflip.com/2gnnjh.jpg", caption: "DevOps asking why my model needs 32GB RAM:", subtitle: "\"It's for the embeddings\"" },
-                    { img: "https://i.imgflip.com/38el31.jpg", caption: "CI/CD pipeline after my 47th push:", subtitle: "\"We need to talk about your commit messages\"" },
-                    { img: "https://i.imgflip.com/4jxxr6.jpg", caption: "Deploying ML model to production:", subtitle: "\"How hard can it be?\" - Famous last words" }
+                    // MLOps & Python (45-50)
+                    { img: "https://picsum.photos/seed/ops1/300/300", caption: "import torch as tf:", subtitle: "\"Some people just want chaos\"" },
+                    { img: "https://picsum.photos/seed/ops2/300/300", caption: "Forgetting .to(device) for the 100th time:", subtitle: "\"Expected cuda:0 but got cpu\"" },
+                    { img: "https://picsum.photos/seed/ops3/300/300", caption: "Model works locally, fails in production:", subtitle: "\"Works on my machine ¯\\_(ツ)_/¯\"" },
+                    { img: "https://picsum.photos/seed/ops4/300/300", caption: "DevOps asking why model needs 32GB RAM:", subtitle: "\"It's for the embeddings\"" },
+                    { img: "https://picsum.photos/seed/ops5/300/300", caption: "CI/CD pipeline after my 47th push:", subtitle: "\"We need to talk about your commits\"" },
+                    { img: "https://picsum.photos/seed/ops6/300/300", caption: "Deploying ML model to production:", subtitle: "\"How hard can it be?\" - Famous last words" }
                 ];
 
                 function showRandomMeme() {
