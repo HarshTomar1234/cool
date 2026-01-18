@@ -236,71 +236,13 @@
                     </div>
                 </div>
 
-                <!-- RAGify -->
-                <div class="project-detailed">
-                    <div class="project-header">
-                        <h3><a href="https://github.com/HarshTomar1234/RAGify" target="_blank">RAGify</a></h3>
-                        <div class="project-meta">
-                            <span class="stars">⭐ 1</span>
-                            <span class="year">2024</span>
-                        </div>
-                    </div>
-
-                    <p class="project-summary">Production-grade Retrieval-Augmented Generation (RAG) pipeline achieving
-                        87% answer accuracy on domain-specific queries. Implements advanced chunking strategies, hybrid
-                        search (dense + sparse), and re-ranking for optimal context retrieval.</p>
-
-                    <div class="project-images-grid">
-                        <img src="https://raw.githubusercontent.com/HarshTomar1234/RAGify/main/RAG/simple-local-rag-workflow-flowchart.png"
-                            alt="RAG Workflow Flowchart">
-                    </div>
-
-                    <div class="tech-details">
-                        <h4>RAG Pipeline Architecture</h4>
-                        <ul>
-                            <li><strong>Document Processing:</strong> Multi-format support (PDF, DOCX, TXT) with
-                                intelligent chunking using RecursiveCharacterTextSplitter</li>
-                            <li><strong>Embedding Strategy:</strong> OpenAI text-embedding-3-large (3072 dimensions)
-                                with batch processing for efficiency</li>
-                            <li><strong>Vector Store:</strong> Pinecone with metadata filtering, achieving &lt;50ms
-                                query
-                                latency at 100K+ documents</li>
-                            <li><strong>Hybrid Search:</strong> Combines dense embeddings (semantic) with BM25 (keyword)
-                                using reciprocal rank fusion</li>
-                            <li><strong>Re-ranking:</strong> Cross-encoder model improving relevance by 23% over base
-                                retrieval</li>
-                        </ul>
-
-                        <div class="metrics-grid">
-                            <div class="metric">
-                                <span class="metric-value">87%</span>
-                                <span class="metric-label">Answer Accuracy</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">23%</span>
-                                <span class="metric-label">Re-rank Improvement</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">&lt;50ms</span>
-                                <span class="metric-label">Query Latency</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">100K+</span>
-                                <span class="metric-label">Documents</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tech-stack">LangChain • Pinecone • GPT-4 • OpenAI Embeddings • BM25 • Cross-Encoders
-                    </div>
-                </div>
-
                 <!-- Field Fusion -->
                 <div class="project-detailed">
                     <div class="project-header">
                         <h3><a href="https://github.com/HarshTomar1234/Field_Fusion" target="_blank">Field Fusion</a>
                             <a href="https://huggingface.co/spaces/Coddieharsh/field-fusion" target="_blank"
-                                class="demo-link">Live Demo</a>
+                                class="demo-link">Live
+                                Demo</a>
                         </h3>
                         <div class="project-meta">
                             <span class="year">2024</span>
@@ -358,7 +300,8 @@
                         <h3><a href="https://github.com/HarshTomar1234/DeepGuard-MLOps-Pipeline"
                                 target="_blank">DeepGuard</a>
                             <a href="https://huggingface.co/spaces/Coddieharsh/DeepGuard" target="_blank"
-                                class="demo-link">Live Demo</a>
+                                class="demo-link">Live
+                                Demo</a>
                         </h3>
                         <div class="project-meta">
                             <span class="year">2025</span>
@@ -411,6 +354,87 @@
 
                     <div class="tech-stack">TensorFlow • Xception • DVC • MLflow • Docker • AWS EKS • Prometheus •
                         Grafana</div>
+                </div>
+
+                <!-- Decifra -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/decifra" target="_blank">Decifra</a>
+                            <a href="https://huggingface.co/spaces/Coddieharsh/decifra-fraud-detection" target="_blank"
+                                class="demo-link">Live Demo</a>
+                        </h3>
+                        <div class="project-meta">
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">End-to-end MLOps fraud detection pipeline with explainable AI featuring
+                        ZenML
+                        orchestration, MLflow experiment tracking, DVC data versioning, and BentoML model serving.
+                        Achieves 88.52%
+                        PR-AUC with SHAP & LIME explanations for transparent predictions.</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/decifra/main/dashboard/images/Dashboard%20interface.png"
+                            alt="Decifra Dashboard Interface">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/decifra/main/dashboard/images/model%20performance%20metrics%20.png"
+                            alt="Model Performance Metrics">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/decifra/main/dashboard/images/architecture.png"
+                            alt="MLOps Pipeline Architecture">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>MLOps Pipeline Architecture</h4>
+                        <ul>
+                            <li><strong>ZenML Orchestration:</strong> 9-step pipeline: ingestion → validation →
+                                preprocessing →
+                                feature engineering → training → evaluation → selection → explainability → registration
+                            </li>
+                            <li><strong>ML Models:</strong> XGBoost + LightGBM + Random Forest ensemble with Optuna
+                                hyperparameter
+                                optimization; SMOTE for handling class imbalance</li>
+                            <li><strong>Experiment Tracking:</strong> MLflow for comprehensive logging, model registry,
+                                and
+                                versioning; DVC for data versioning</li>
+                            <li><strong>Model Serving:</strong> BentoML for API deployment with Great Expectations data
+                                validation
+                            </li>
+                            <li><strong>Explainability:</strong> SHAP for global feature importance and LIME for
+                                instance-level
+                                explanations</li>
+                        </ul>
+
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Real-time fraud prediction with transparent decision explanations</li>
+                            <li>Interactive Streamlit dashboard for monitoring and analysis</li>
+                            <li>Docker containerization with CI/CD via GitHub Actions</li>
+                            <li>Comprehensive feature contribution analysis for each prediction</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">88.52%</span>
+                                <span class="metric-label">PR-AUC Score</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">9-Step</span>
+                                <span class="metric-label">ZenML Pipeline</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">SHAP</span>
+                                <span class="metric-label">Explainability</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">MLflow</span>
+                                <span class="metric-label">Tracking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">ZenML • MLflow • DVC • BentoML • XGBoost • LightGBM • SHAP • LIME •
+                        Streamlit • Docker
+                    </div>
                 </div>
 
                 <!-- TinderMuse -->
