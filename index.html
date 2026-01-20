@@ -7,6 +7,23 @@
     <title>Harsh Tomar - AI/ML Developer</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        .avatar-3d {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 1.5rem;
+            background: radial-gradient(circle at 30% 30%, #1a1a2e, #0a0a0f);
+            box-shadow: 0 0 40px rgba(100, 180, 255, 0.3), inset 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .avatar-3d canvas {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,7 +39,7 @@
 
         <header>
             <div class="profile">
-                <img src="https://avatars.githubusercontent.com/u/123729493?v=4" alt="Harsh Tomar" class="avatar">
+                <div id="avatar-container" class="avatar-3d"></div>
                 <h1>Harsh Tomar</h1>
                 <p class="tagline">I build AI systems that actually work — from tracking tennis balls at 30 FPS to
                     generating novel molecules</p>
@@ -311,6 +328,96 @@
                     Source</a></p>
         </footer>
     </div>
+
+    <script>
+        // Animated Tesseract (4D Hypercube)
+        const container = document.getElementById('avatar-container');
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+
+        renderer.setSize(150, 150);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        container.appendChild(renderer.domElement);
+
+        // Create wireframe cube
+        function createCube(size, color, opacity) {
+            const geometry = new THREE.BoxGeometry(size, size, size);
+            const edges = new THREE.EdgesGeometry(geometry);
+            const material = new THREE.LineBasicMaterial({
+                color: color,
+                transparent: true,
+                opacity: opacity
+            });
+            return new THREE.LineSegments(edges, material);
+        }
+
+        // Outer cube
+        const outerCube = createCube(1.6, 0x64b5f6, 0.8);
+        scene.add(outerCube);
+
+        // Inner cube
+        const innerCube = createCube(0.9, 0xb388ff, 0.9);
+        scene.add(innerCube);
+
+        // Core cube (smallest)
+        const coreCube = createCube(0.4, 0xff6b9d, 1.0);
+        scene.add(coreCube);
+
+        // Connecting lines between cubes (tesseract edges)
+        const connectMaterial = new THREE.LineBasicMaterial({
+            color: 0x4fc3f7,
+            transparent: true,
+            opacity: 0.4
+        });
+
+        const corners = [
+            [-1, -1, -1], [1, -1, -1], [1, 1, -1], [-1, 1, -1],
+            [-1, -1, 1], [1, -1, 1], [1, 1, 1], [-1, 1, 1]
+        ];
+
+        const connections = new THREE.Group();
+        corners.forEach(corner => {
+            const points = [
+                new THREE.Vector3(corner[0] * 0.8, corner[1] * 0.8, corner[2] * 0.8),
+                new THREE.Vector3(corner[0] * 0.45, corner[1] * 0.45, corner[2] * 0.45)
+            ];
+            const lineGeom = new THREE.BufferGeometry().setFromPoints(points);
+            const line = new THREE.Line(lineGeom, connectMaterial);
+            connections.add(line);
+        });
+        scene.add(connections);
+
+        camera.position.z = 3.5;
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            const time = Date.now() * 0.001;
+
+            // Rotate cubes at different speeds (tesseract 4D projection effect)
+            outerCube.rotation.x = time * 0.3;
+            outerCube.rotation.y = time * 0.4;
+
+            innerCube.rotation.x = -time * 0.5;
+            innerCube.rotation.y = time * 0.6;
+            innerCube.rotation.z = time * 0.2;
+
+            coreCube.rotation.x = time * 0.7;
+            coreCube.rotation.y = -time * 0.5;
+            coreCube.rotation.z = time * 0.4;
+
+            connections.rotation.x = time * 0.4;
+            connections.rotation.y = time * 0.5;
+
+            // Subtle pulsing scale
+            const pulse = 1 + Math.sin(time * 2) * 0.05;
+            innerCube.scale.set(pulse, pulse, pulse);
+
+            renderer.render(scene, camera);
+        }
+        animate();
+    </script>
 </body>
 
 </html>
