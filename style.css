@@ -1056,3 +1056,27 @@ footer {
 footer a {
     color: var(--text-secondary);
 }
+
+/* Demo Link - Warm Amber/Gold Style */
+.demo-amber {
+    background: linear-gradient(135deg, #d69e2e 0%, #b7791f 100%);
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(214, 158, 46, 0.3);
+}
+
+.demo-amber:hover {
+    background: linear-gradient(135deg, #ecc94b 0%, #d69e2e 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(214, 158, 46, 0.4);
+}
+
+.preview-link.demo-amber {
+    margin-top: 0.5rem;
+}
