@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - Harsh Tomar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .coming-soon-section {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .meme-carousel {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .meme-carousel img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            margin-bottom: 1rem;
+        }
+
+        .meme-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .meme-nav button {
+            background: linear-gradient(135deg, #d69e2e 0%, #b7791f 100%);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .meme-nav button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(214, 158, 46, 0.4);
+        }
+
+        .coming-soon-text {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin: 2rem 0;
+            font-style: italic;
+        }
+
+        .blog-links {
+            margin-top: 2rem;
+        }
+
+        .blog-links a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            color: #4a5568;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .blog-links a:hover {
+            background: #4299e1;
+            color: white;
+            border-color: #4299e1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="research.html" class="nav-link">Research</a>
+            <a href="blogs.html" class="nav-link active">Blogs</a>
+            <a href="more.html" class="nav-link">More</a>
+        </nav>
+
+        <main>
+            <section class="coming-soon-section fade-in">
+                <h2>Technical Blogs</h2>
+                <p class="section-desc">Deep dives, tutorials, and thoughts on AI/ML... coming soon!</p>
+
+                <div class="meme-carousel">
+                    <img id="blog-meme" src="assets/memes/blog_coming_soon.png" alt="Blog Coming Soon Meme">
+                    <p id="meme-caption" style="color: #718096; font-style: italic;">"I'll write that blog today..."</p>
+
+                    <div class="meme-nav">
+                        <button onclick="prevMeme()">← Prev</button>
+                        <button onclick="nextMeme()">Next →</button>
+                    </div>
+                </div>
+
+                <p class="coming-soon-text">
+                    📝 Currently busy fine-tuning models and shipping code...<br>
+                    Blogs are in the works! Check back soon.
+                </p>
+
+                <div class="blog-links">
+                    <p style="color: #718096; margin-bottom: 1rem;">Meanwhile, check out my Notion drafts:</p>
+                    <a href="https://www.notion.so/Tennis-Vision-25b4df040c1480d1840ad41d281672f3" target="_blank">
+                        🎾 Tennis Vision (Draft)
+                    </a>
+                    <a href="https://www.notion.so/Core-Concepts-of-Reasoning-in-LLMs-from-Scratch-1de4df040c14804b9b64f034e181aa75"
+                        target="_blank">
+                        🧠 Reasoning LLMs (Draft)
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built with curiosity and code • <a href="https://github.com/HarshTomar1234/cool" target="_blank">View
+                    Source</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const memes = [
+            { img: "assets/memes/blog_coming_soon.png", caption: '"I\'ll write that blog today..."' },
+            { img: "assets/memes/blog_meme_2.png", caption: '"47 days since last save... Coffee & Despair"' },
+            { img: "assets/memes/blog_meme_3.png", caption: '"Blogs? I thought you said train more models!"' }
+        ];
+        let currentMeme = 0;
+
+        function showMeme(index) {
+            document.getElementById('blog-meme').src = memes[index].img;
+            document.getElementById('meme-caption').textContent = memes[index].caption;
+        }
+
+        function nextMeme() {
+            currentMeme = (currentMeme + 1) % memes.length;
+            showMeme(currentMeme);
+        }
+
+        function prevMeme() {
+            currentMeme = (currentMeme - 1 + memes.length) % memes.length;
+            showMeme(currentMeme);
+        }
+    </script>
+</body>
+
+</html>

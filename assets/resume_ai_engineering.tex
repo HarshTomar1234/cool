@@ -1,0 +1,104 @@
+%-------------------------
+% AI ENGINEERING RESUME - Harsh Tomar
+% 1 PAGE - Balanced spacing
+%-------------------------
+
+\documentclass[a4paper,10.5pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+% Section formatting
+\titleformat{\section}{\normalsize\bfseries\scshape}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% List settings
+\setlist[itemize]{leftmargin=0.15in, itemsep=2pt, parsep=0pt, topsep=3pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\LARGE \textbf{HARSH TOMAR}} \\[5pt]
+    +91-8817969476 \quad $\bullet$ \quad 
+    \href{mailto:tomarharsh28303@gmail.com}{tomarharsh28303@gmail.com} \quad $\bullet$ \quad 
+    \href{https://linkedin.com/in/harsh-tomar-a96a38256}{\underline{LinkedIn}} \quad $\bullet$ \quad
+    \href{https://github.com/HarshTomar1234}{\underline{GitHub}} \quad $\bullet$ \quad
+    \href{https://kernel-crush.netlify.app}{\underline{Portfolio}}
+\end{center}
+
+%----------SUMMARY----------
+\section{Summary}
+AI Engineer specializing in \textbf{LLM applications}, \textbf{agentic systems}, and \textbf{Generative AI}. Built RAG-powered search agents improving relevance by \textbf{78\%}. Developed autonomous AI with \textbf{94\% routing accuracy} using LangGraph. Implemented Vision Language Models from scratch in PyTorch. Strong in LangChain, prompt engineering, fine-tuning. \textbf{10+ PRs merged} in open-source projects.
+
+%----------EXPERIENCE----------
+\section{Experience}
+
+\textbf{AI Intern} \hfill \textbf{May 2025 -- Jul 2025} \\
+\textit{i3 Digital Health} \hfill \textit{Remote}
+\begin{itemize}
+    \item \textbf{Architected research profiling system} that auto-generates researcher profiles by aggregating data from \textbf{PubMed, ResearchGate, Google Scholar APIs}
+    \item \textbf{Built RAG-powered search agents} using LangChain providing contextual recommendations and identifying potential research collaborators
+    \item Collaborated with healthcare professionals to refine search algorithms; deployed with \textbf{FastAPI + Docker}
+\end{itemize}
+
+\textbf{Community Contributor} \hfill \textbf{Jan 2023 -- Present} \\
+\textit{CNCF \& Google Developer Groups} \hfill \textit{Remote}
+\begin{itemize}
+    \item Presented \textbf{2 tech talks} on AI/ML; mentored \textbf{10+ developers}; \textbf{10+ PRs merged} in open-source (llm-council, kubrick-ai)
+\end{itemize}
+
+%----------PROJECTS----------
+\section{Projects}
+
+\textbf{QuantaAI -- Agentic Search Assistant} \hfill \textbf{2025} \\
+\textit{LangGraph, GPT-4, Next.js, TypeScript, Tavily API} \quad $|$ \quad \href{https://github.com/HarshTomar1234/QuantaAI}{\underline{GitHub}}
+\begin{itemize}
+    \item Built \textbf{4-node LangGraph state machine} (Classifier $\rightarrow$ Search $\rightarrow$ Generate $\rightarrow$ Response) with conditional routing
+    \item GPT-4 routing achieving \textbf{94\% accuracy}; Tavily web search; streaming with \textbf{context management} and source attribution
+\end{itemize}
+
+\textbf{VLMverse -- Vision Language Models from Scratch} \hfill \textbf{2025} \\
+\textit{PyTorch, Transformers, SigLIP, Gemma, RoPE, KV-Cache} \quad $|$ \quad \href{https://github.com/HarshTomar1234/VLMverse}{\underline{GitHub}}
+\begin{itemize}
+    \item Implemented \textbf{PaLiGemma VLM}: SigLIP encoder (16×16 patches, 196 tokens) + Gemma 2B decoder-only LLM
+    \item Built \textbf{RoPE}, \textbf{KV-Cache} for efficient inference, \textbf{grouped-query attention}, RMSNorm, GeLU activations
+\end{itemize}
+
+\textbf{AgentForge -- Multi-Agent Systems} \hfill \textbf{2025} \\
+\textit{CrewAI, LangGraph, AG2 (AutoGen), LlamaIndex, smolagents} \quad $|$ \quad \href{https://github.com/HarshTomar1234/AgentForge}{\underline{GitHub}} \quad $|$ \quad \textbf{2 Stars}
+\begin{itemize}
+    \item \textbf{15+ agent implementations}: orchestrator, explorer, coder agents with tool use, function calling, memory
+    \item Multi-agent collaboration patterns reducing complex task completion time by \textbf{60\%}
+\end{itemize}
+
+\textbf{Tennis Vision -- Real-time Sports Analytics} \hfill \textbf{2025} \\
+\textit{PyTorch, YOLOv8, OpenCV, ResNet-50} \quad $|$ \quad \href{https://huggingface.co/spaces/Coddieharsh/tennis-vision}{\underline{Demo}} \quad $|$ \quad \href{https://github.com/HarshTomar1234/Tennis-Vision}{\underline{GitHub}} \quad $|$ \quad \textbf{23 Stars}
+\begin{itemize}
+    \item \textbf{Real-time CV}: \textbf{95\% player detection}, \textbf{88\% ball tracking} at 30 FPS; court keypoints (\textbf{91.5\%}); shot classification (\textbf{91\%}); \textbf{94\% memory optimization}
+\end{itemize}
+
+%----------SKILLS----------
+\section{Technical Skills}
+\textbf{LLM \& GenAI:} LangChain, LangGraph, LlamaIndex, CrewAI, AG2, RAG, Prompt Engineering, Fine-tuning, LoRA/QLoRA \\
+\textbf{AI Agents:} Multi-Agent Systems, Tool Use, Function Calling, Agentic Workflows, State Machines, Memory \\
+\textbf{ML/DL:} PyTorch, TensorFlow, HuggingFace, Vision Transformers, VLMs, OpenCV, YOLOv5-v8 \\
+\textbf{Tools:} Python, TypeScript, FastAPI, Next.js, Docker, AWS, GCP, Firebase, Netlify, Pinecone, Chroma
+
+%----------EDUCATION----------
+\section{Education}
+\textbf{B.Tech in Artificial Intelligence and Data Science} \hfill \textbf{Nov 2022 -- May 2026} \\
+Lakshmi Narain College of Technology, Bhopal \hfill CGPA: 7.2/10
+
+%----------CERTIFICATIONS----------
+\section{Certifications \& Achievements}
+\textbf{Generative AI} - Google Cloud \quad $|$ \quad \textbf{ML Specialization} - Udemy \quad $|$ \quad \textbf{Open Source:} 47 repos, 40+ stars, 10+ PRs \quad $|$ \quad \textbf{CNCF Member}
+
+\end{document}

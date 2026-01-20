@@ -1,0 +1,109 @@
+%-------------------------
+% ML ENGINEERING RESUME - Harsh Tomar
+% 1 PAGE - Properly fills page
+%-------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage[margin=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\scshape}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+% List settings - proper spacing
+\setlist[itemize]{leftmargin=0.18in, itemsep=3pt, parsep=1pt, topsep=4pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \textbf{HARSH TOMAR}} \\[8pt]
+    +91-8817969476 \quad $\bullet$ \quad 
+    \href{mailto:tomarharsh28303@gmail.com}{tomarharsh28303@gmail.com} \quad $\bullet$ \quad 
+    \href{https://linkedin.com/in/harsh-tomar-a96a38256}{\underline{LinkedIn}} \quad $\bullet$ \quad
+    \href{https://github.com/HarshTomar1234}{\underline{GitHub}} \quad $\bullet$ \quad
+    \href{https://kernel-crush.netlify.app}{\underline{Portfolio}}
+\end{center}
+
+%----------SUMMARY----------
+\section{Summary}
+ML Engineer specializing in \textbf{end-to-end MLOps pipelines}, \textbf{Computer Vision}, and production ML systems. Built real-time sports analytics with \textbf{95\% detection accuracy} at 30 FPS. Developed fraud detection achieving \textbf{88.52\% PR-AUC} using ZenML, MLflow, DVC. Strong expertise in PyTorch, model training, hyperparameter optimization, and AWS/Kubernetes deployments. \textbf{10+ PRs merged} in open-source projects.
+
+%----------EXPERIENCE----------
+\section{Experience}
+
+\textbf{AI Intern} \hfill \textbf{May 2025 -- Jul 2025} \\
+\textit{i3 Digital Health} \hfill \textit{Remote}
+\begin{itemize}
+    \item \textbf{Architected research profiling system} auto-generating researcher profiles by aggregating data from \textbf{PubMed, ResearchGate, Google Scholar APIs}
+    \item \textbf{Built RAG-powered search agents} using LangChain for contextual recommendations and collaborator identification
+    \item Collaborated with healthcare professionals to refine search algorithms; deployed with \textbf{FastAPI + Docker}
+    \item Implemented web scraping pipelines and \textbf{multi-source API integration} for comprehensive research data collection
+\end{itemize}
+
+\vspace{4pt}
+
+\textbf{Community Contributor} \hfill \textbf{Jan 2023 -- Present} \\
+\textit{CNCF \& Google Developer Groups} \hfill \textit{Remote}
+\begin{itemize}
+    \item Presented \textbf{2 tech talks} on ML deployment best practices; mentored \textbf{10+ developers} in production ML
+    \item Active CNCF member; \textbf{10+ PRs merged} in open-source projects (llm-council, kubrick-ai)
+\end{itemize}
+
+%----------PROJECTS----------
+\section{Projects}
+
+\textbf{Decifra -- MLOps Fraud Detection Pipeline} \hfill \textbf{2025} \\
+\textit{ZenML, MLflow, DVC, BentoML, XGBoost, SHAP, LIME} \quad $|$ \quad \href{https://huggingface.co/spaces/Coddieharsh/decifra-fraud-detection}{\underline{Demo}} \quad $|$ \quad \href{https://github.com/HarshTomar1234/decifra}{\underline{GitHub}}
+\begin{itemize}
+    \item Built \textbf{end-to-end MLOps pipeline} with \textbf{ZenML} orchestrating 9 steps: ingestion $\rightarrow$ validation $\rightarrow$ preprocessing $\rightarrow$ feature engineering $\rightarrow$ training $\rightarrow$ evaluation $\rightarrow$ selection $\rightarrow$ explainability $\rightarrow$ registration
+    \item Achieved \textbf{88.52\% PR-AUC} using XGBoost + LightGBM + Random Forest ensemble with \textbf{Optuna} hyperparameter tuning; handled imbalanced data using SMOTE and stratified sampling
+    \item Implemented \textbf{MLflow} for tracking, \textbf{DVC} for versioning, \textbf{BentoML} for serving, \textbf{Great Expectations} for validation; \textbf{SHAP + LIME} for explainability; Streamlit dashboard with CI/CD
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{Tennis Vision -- Real-time Sports Analytics} \hfill \textbf{2025} \\
+\textit{PyTorch, YOLOv8, OpenCV, ResNet-50} \quad $|$ \quad \href{https://huggingface.co/spaces/Coddieharsh/tennis-vision}{\underline{Demo}} \quad $|$ \quad \href{https://github.com/HarshTomar1234/Tennis-Vision}{\underline{GitHub}} \quad $|$ \quad \textbf{23 Stars}
+\begin{itemize}
+    \item Developed \textbf{real-time CV pipeline}: YOLOv8 player detection (\textbf{95\% accuracy}, 92.8\% mAP@0.5), ball tracking (\textbf{88\%}) with polynomial interpolation at \textbf{30 FPS with <100ms latency}
+    \item ResNet-50 court keypoint detection for \textbf{14 landmarks} (\textbf{91.5\% accuracy}); shot classification for \textbf{12 stroke types} (\textbf{91\%}) using rule-based temporal analysis
+    \item Optimized memory by \textbf{94\%} via ROI processing; created mini-court visualization with player speed tracking
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{DeepGuard -- MLOps Deepfake Detection} \hfill \textbf{2025} \\
+\textit{TensorFlow, Xception, DVC, MLflow, Docker, AWS EKS, Prometheus, Grafana} \quad $|$ \quad \href{https://huggingface.co/spaces/Coddieharsh/DeepGuard}{\underline{Demo}} \quad $|$ \quad \href{https://github.com/HarshTomar1234/DeepGuard-MLOps-Pipeline}{\underline{GitHub}}
+\begin{itemize}
+    \item Developed deepfake detection using \textbf{Xception transfer learning} achieving \textbf{93.4\% accuracy} on GenImage dataset; implemented \textbf{Grad-CAM} for model explainability
+    \item Built \textbf{production deployment} on \textbf{AWS EKS Kubernetes} with \textbf{Prometheus + Grafana} monitoring; DVC for versioning, MLflow for tracking, full CI/CD pipeline
+\end{itemize}
+
+%----------SKILLS----------
+\section{Technical Skills}
+\textbf{ML/Deep Learning:} PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, HuggingFace, Keras \\
+\textbf{Computer Vision:} YOLOv5-v8, OpenCV, Object Detection, Image Segmentation, ResNet, Xception \\
+\textbf{MLOps:} ZenML, MLflow, DVC, BentoML, Optuna, Great Expectations, Model Registry, Experiment Tracking \\
+\textbf{Cloud \& DevOps:} AWS (EC2, S3, EKS, ECR), GCP, Firebase, Docker, Kubernetes, CI/CD, Prometheus, Grafana \\
+\textbf{Languages:} Python, SQL, Bash \quad $|$ \quad \textbf{Data:} MongoDB, PostgreSQL, Feature Engineering
+
+%----------EDUCATION----------
+\section{Education}
+\textbf{B.Tech in Artificial Intelligence and Data Science} \hfill \textbf{Nov 2022 -- May 2026} \\
+Lakshmi Narain College of Technology, Bhopal \hfill CGPA: 7.2/10
+
+%----------CERTIFICATIONS----------
+\section{Certifications \& Achievements}
+\textbf{ML Specialization} - Udemy \quad $|$ \quad \textbf{Generative AI} - Google Cloud \quad $|$ \quad \textbf{Open Source:} 47 repos, 40+ stars, 10+ PRs merged \quad $|$ \quad \textbf{CNCF Member}
+
+\end{document}

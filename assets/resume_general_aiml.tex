@@ -1,0 +1,145 @@
+%-------------------------
+% GENERAL AI/ML ENGINEER RESUME - Harsh Tomar
+% 2-PAGE VERSION - Compact and ATS-FRIENDLY
+%-------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage[margin=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\scshape}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% Subsection for projects
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+
+% List settings
+\setlist[itemize]{leftmargin=0.18in, itemsep=2pt, parsep=0pt, topsep=2pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\Huge \textbf{HARSH TOMAR}} \\[6pt]
+    {\large AI/ML Engineer} \\[4pt]
+    +91-8817969476 \quad $\bullet$ \quad 
+    \href{mailto:tomarharsh28303@gmail.com}{tomarharsh28303@gmail.com} \quad $\bullet$ \quad 
+    \href{https://linkedin.com/in/harsh-tomar-a96a38256}{\underline{LinkedIn}} \quad $\bullet$ \quad
+    \href{https://github.com/HarshTomar1234}{\underline{GitHub}} \quad $\bullet$ \quad
+    \href{https://kernel-crush.netlify.app}{\underline{Portfolio}}
+\end{center}
+
+%----------SUMMARY----------
+\section{Professional Summary}
+Versatile \textbf{AI/ML Engineer} with expertise in \textbf{Machine Learning}, \textbf{Deep Learning}, \textbf{Computer Vision}, \textbf{MLOps}, \textbf{Large Language Models (LLMs)}, and \textbf{Generative AI}. Built production ML systems achieving \textbf{95\% detection accuracy} in real-time video analytics and \textbf{88.52\% PR-AUC} in fraud detection using ensemble models (XGBoost, LightGBM). Developed agentic AI systems with \textbf{94\% routing accuracy} using LangGraph. Strong in PyTorch, TensorFlow, LangChain, NLP, end-to-end ML pipelines, and AWS cloud deployments. \textbf{40+ GitHub stars} across 47 repositories; \textbf{10+ PRs merged} in open-source projects.
+
+%----------EXPERIENCE----------
+\section{Professional Experience}
+
+\textbf{AI Intern} \hfill \textbf{May 2025 -- Jul 2025} \\
+\textit{i3 Digital Health} \hfill \textit{Remote}
+\begin{itemize}
+    \item \textbf{Architected research profiling system} auto-generating researcher profiles by aggregating data from \textbf{PubMed, ResearchGate, Google Scholar APIs}
+    \item \textbf{Built RAG-powered search agents} using LangChain + vector embeddings for contextual recommendations and research collaborator identification
+    \item Collaborated with healthcare professionals to refine NLP search algorithms; deployed with \textbf{FastAPI + Docker}
+    \item Implemented web scraping and \textbf{multi-source API integration} for comprehensive research data collection
+\end{itemize}
+
+\textbf{Community Contributor} \hfill \textbf{Jan 2023 -- Present} \\
+\textit{CNCF \& Google Developer Groups} \hfill \textit{Remote}
+\begin{itemize}
+    \item Presented \textbf{2 tech talks} on AI/ML; mentored \textbf{10+ developers}; \textbf{10+ PRs merged} in open-source (llm-council, kubrick-ai, multimodal-agents)
+\end{itemize}
+
+%----------PROJECTS----------
+\section{Projects}
+
+%--- PROJECT 1 ---
+\subsection{Tennis Vision -- Real-time Sports Analytics \hfill 2025}
+\textit{PyTorch, YOLOv8, OpenCV, ResNet-50} \quad $|$ \quad \href{https://huggingface.co/spaces/Coddieharsh/tennis-vision}{\underline{Demo}} \quad $|$ \quad \href{https://github.com/HarshTomar1234/Tennis-Vision}{\underline{GitHub}} \quad $|$ \quad \textbf{23 Stars}
+\begin{itemize}
+    \item Developed real-time tennis analysis: \textbf{95\% player detection}, \textbf{88\% ball tracking} using YOLOv8 at \textbf{30 FPS}
+    \item ResNet-50 court keypoints (\textbf{91.5\% accuracy}, 14 landmarks); shot classification for \textbf{12 stroke types} (\textbf{91\%})
+    \item Optimized memory by \textbf{94\%} via ROI processing; mini-court visualization with player speed tracking
+\end{itemize}
+
+%--- PROJECT 2 ---
+\subsection{Decifra -- MLOps Fraud Detection Pipeline \hfill 2025}
+\textit{ZenML, MLflow, DVC, BentoML, XGBoost, SHAP} \quad $|$ \quad \href{https://huggingface.co/spaces/Coddieharsh/decifra-fraud-detection}{\underline{Demo}} \quad $|$ \quad \href{https://github.com/HarshTomar1234/decifra}{\underline{GitHub}}
+\begin{itemize}
+    \item Built \textbf{end-to-end MLOps pipeline} with ZenML (9 steps: ingestion $\rightarrow$ validation $\rightarrow$ training $\rightarrow$ evaluation $\rightarrow$ registration)
+    \item Achieved \textbf{88.52\% PR-AUC} using XGBoost + LightGBM with Optuna tuning; SMOTE for imbalanced data
+    \item Implemented MLflow tracking, DVC versioning, BentoML serving, SHAP + LIME explainability; Streamlit + CI/CD
+\end{itemize}
+
+%--- PROJECT 3 ---
+\subsection{QuantaAI -- Agentic Search Assistant \hfill 2025}
+\textit{LangGraph, GPT-4, Next.js 14, TypeScript, Tavily API} \quad $|$ \quad \href{https://github.com/HarshTomar1234/QuantaAI}{\underline{GitHub}}
+\begin{itemize}
+    \item Built \textbf{4-node LangGraph state machine} (Classifier $\rightarrow$ Search $\rightarrow$ Generate $\rightarrow$ Response) with conditional routing
+    \item GPT-4 routing achieving \textbf{94\% accuracy}; Tavily web search; streaming with context management (10 messages)
+\end{itemize}
+
+%--- PROJECT 4 ---
+\subsection{DeepGuard -- MLOps Deepfake Detection \hfill 2025}
+\textit{TensorFlow, Xception, DVC, MLflow, AWS EKS, Grafana} \quad $|$ \quad \href{https://huggingface.co/spaces/Coddieharsh/DeepGuard}{\underline{Demo}} \quad $|$ \quad \href{https://github.com/HarshTomar1234/DeepGuard-MLOps-Pipeline}{\underline{GitHub}}
+\begin{itemize}
+    \item Deepfake detection using Xception achieving \textbf{93.4\% accuracy}; Grad-CAM explainability
+    \item Production deployment on \textbf{AWS EKS Kubernetes} with Prometheus + Grafana monitoring; full CI/CD
+\end{itemize}
+
+%--- PROJECT 5 ---
+\subsection{VLMverse -- Vision Language Models from Scratch \hfill 2025}
+\textit{PyTorch, Transformers, SigLIP, Gemma, RoPE, KV-Cache} \quad $|$ \quad \href{https://github.com/HarshTomar1234/VLMverse}{\underline{GitHub}}
+\begin{itemize}
+    \item Implemented \textbf{PaLiGemma VLM}: SigLIP encoder (16×16 patches, 196 tokens) + Gemma 2B decoder-only LLM
+    \item Built RoPE, KV-Cache for efficient inference, grouped-query attention, RMSNorm, GeLU activations
+\end{itemize}
+
+%--- PROJECT 6 ---
+\subsection{AgentForge -- Multi-Agent Systems Framework \hfill 2025}
+\textit{CrewAI, LangGraph, AG2 (AutoGen), smolagents} \quad $|$ \quad \href{https://github.com/HarshTomar1234/AgentForge}{\underline{GitHub}} \quad $|$ \quad 2 Stars
+\begin{itemize}
+    \item \textbf{15+ agent implementations}: orchestrator, explorer, coder with tool use, function calling, memory systems
+    \item Multi-agent collaboration patterns reducing complex task completion time by \textbf{60\%}
+\end{itemize}
+
+%--- PROJECT 7 ---
+\subsection{Reasoning LLMs from Scratch \hfill 2025}
+\textit{PyTorch, Llama 3.2, Chain-of-Thought, Beam Search} \quad $|$ \quad \href{https://github.com/HarshTomar1234/Reasoning-llms-}{\underline{GitHub}}
+\begin{itemize}
+    \item Implemented inference-time compute scaling: chain-of-thought prompting, beam search decoding strategies
+\end{itemize}
+
+%----------SKILLS---------- (COMPACT FORMAT WITH MORE KEYWORDS)
+\section{Technical Skills}
+\textbf{Machine Learning:} Supervised Learning, Unsupervised Learning, Classification, Regression, Clustering, Feature Engineering \\
+\textbf{Deep Learning:} PyTorch, TensorFlow, Keras, Neural Networks, CNNs, RNNs, Transformers, HuggingFace, Transfer Learning \\
+\textbf{Computer Vision:} YOLO (v5-v8), OpenCV, Object Detection, Image Segmentation, ResNet, Xception, Vision Transformers \\
+\textbf{NLP/LLM:} Text Classification, NER, Sentiment Analysis, BERT, GPT, Text Embeddings, Semantic Search \\
+\textbf{Generative AI:} LangChain, LangGraph, LlamaIndex, RAG, Prompt Engineering, Fine-tuning, LoRA/QLoRA, PEFT, CrewAI \\
+\textbf{AI Agents:} Multi-Agent Systems, Tool Use, Function Calling, Agentic Workflows, State Machines, Memory \\
+\textbf{MLOps:} ZenML, MLflow, DVC, BentoML, Optuna, Model Registry, Experiment Tracking, A/B Testing, Docker, Kubernetes \\
+\textbf{Cloud/Tools:} AWS (EC2, S3, EKS), GCP, Firebase, Netlify, FastAPI, Streamlit, CI/CD, Prometheus, Python, SQL, MongoDB, Pinecone
+
+%----------EDUCATION----------
+\section{Education}
+\textbf{B.Tech in Artificial Intelligence and Data Science} \hfill \textbf{Nov 2022 -- May 2026} \\
+Lakshmi Narain College of Technology, Bhopal \hfill CGPA: 7.2/10 \\
+\textit{Coursework:} Machine Learning, Deep Learning, Computer Vision, NLP, Reinforcement Learning, Neural Networks
+
+%----------CERTIFICATIONS----------
+\section{Certifications \& Achievements}
+\textbf{ML Specialization} - Udemy \quad $|$ \quad \textbf{Generative AI} - Google Cloud \quad $|$ \quad \textbf{Open Source:} 47 repos, 40+ stars, 10+ PRs merged \quad $|$ \quad \textbf{CNCF Member}
+
+\end{document}
