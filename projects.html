@@ -34,7 +34,7 @@
                                 class="demo-link">Live Demo</a>
                         </h3>
                         <div class="project-meta">
-                            <span class="stars">⭐ 23</span>
+                            <span class="stars">⭐ 31</span>
                             <span class="year">2025</span>
                         </div>
                     </div>
@@ -98,6 +98,60 @@
                     </div>
 
                     <div class="tech-stack">PyTorch • OpenCV • YOLOv8 • Supervision • ResNet-50</div>
+                </div>
+
+                <!-- rPPG Heart Rate -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/rppg-heart-rate" target="_blank">rPPG Heart-Rate — Contactless Biosignal Extraction</a></h3>
+                        <div class="project-meta">
+                            <span class="stars">⭐ 4</span>
+                            <span class="year">2026</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Contactless heart-rate estimation from face video — no sensors required. Hybrid pipeline combining classical signal-processing algorithms (CHROM, POS) with the PhysNet deep learning model, trained on the UBFC-rPPG dataset. Deployed as a real-time web application with ONNX export for fast CPU inference.</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/rppg-heart-rate/main/result_imgs/app_interface.png"
+                            alt="rPPG App Interface — web dashboard">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/rppg-heart-rate/main/result_imgs/user.png"
+                            alt="rPPG User Detection — face ROI extraction">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/rppg-heart-rate/main/result_imgs/user_chart.png"
+                            alt="rPPG Heart-Rate Chart — real-time signal visualisation">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>Technical Implementation</h4>
+                        <ul>
+                            <li><strong>Problem:</strong> Extract heart rate from subtle (~1% brightness) periodic skin-colour variations in webcam video without physical contact sensors</li>
+                            <li><strong>Classical Methods:</strong> CHROM and POS algorithms for signal extraction from facial ROI — lightweight, interpretable, zero GPU requirement</li>
+                            <li><strong>Deep Learning:</strong> PhysNet convolutional model trained on UBFC-rPPG benchmark dataset for improved accuracy under varied lighting conditions</li>
+                            <li><strong>ONNX Export:</strong> Model exported to ONNX runtime enabling ~12 FPS real-time inference on CPU without GPU dependency</li>
+                            <li><strong>Deployment:</strong> FastAPI backend + web dashboard with per-method confidence scoring and signal-quality indicators</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">~12 FPS</span>
+                                <span class="metric-label">Real-time ONNX</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">3 Methods</span>
+                                <span class="metric-label">CHROM · POS · PhysNet</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">UBFC-rPPG</span>
+                                <span class="metric-label">Benchmark Dataset</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">FastAPI</span>
+                                <span class="metric-label">Web Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">PyTorch • OpenCV • ONNX • FastAPI • Signal Processing • UBFC-rPPG • Healthcare AI</div>
                 </div>
 
                 <!-- QuantaAI -->
