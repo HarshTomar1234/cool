@@ -26,72 +26,6 @@
                 <p class="section-desc">Real projects I've built to solve interesting problems — not just tutorials,
                     actually working systems</p>
 
-                <!-- Continuum -->
-                <div class="project-detailed">
-                    <div class="project-header">
-                        <h3><a href="https://github.com/HarshTomar1234/continuum" target="_blank">Continuum</a></h3>
-                        <div class="project-meta">
-                            <span class="year">2026</span>
-                        </div>
-                    </div>
-
-                    <p class="project-summary">Production LLMOps platform for monitoring LLM quality and detecting
-                        behavioural drift before it becomes a problem. 11-microservice event-driven architecture on AWS
-                        ECS Fargate, Apache Kafka trace pipeline, multi-dimensional quality scoring, and Statistical
-                        Process Control for drift detection. Designed self-healing LoRA fine-tuning loop with A/B
-                        canary deployment.</p>
-
-                    <div class="tech-details">
-                        <h4>Architecture</h4>
-                        <ul>
-                            <li><strong>Event-Driven Pipeline:</strong> Apache Kafka (KRaft mode, 10 topics) captures
-                                every production LLM trace in real time; 11 microservices on AWS ECS Fargate handle
-                                ingestion, scoring, storage, alerting, and orchestration</li>
-                            <li><strong>Quality Scoring:</strong> Multi-dimensional scorer combining Claude LLM-judge +
-                                ROUGE/BLEU metrics + semantic similarity; each response gets a composite quality
-                                score</li>
-                            <li><strong>Drift Detection:</strong> Statistical Process Control with Western Electric
-                                rules applied to quality score time-series; alerts trigger when the score distribution
-                                shifts beyond expected control limits</li>
-                            <li><strong>Self-Healing Loop:</strong> Designed LoRA fine-tuning orchestration to
-                                automatically remediate detected drift with A/B canary deployment; Terraform IaC for
-                                full infrastructure reproducibility</li>
-                            <li><strong>Observability:</strong> 166 Prometheus metric series, Grafana dashboards,
-                                authenticated REST API, React/TypeScript frontend</li>
-                        </ul>
-
-                        <h4>Key Results</h4>
-                        <ul>
-                            <li>Verified end-to-end trace flow: Kafka → quality scoring → PostgreSQL → alerting</li>
-                            <li>166 Prometheus metric series covering all microservices</li>
-                            <li>10/10 passing E2E tests across the full pipeline</li>
-                            <li>Full Terraform IaC + GitHub Actions CI/CD</li>
-                        </ul>
-
-                        <div class="metrics-grid">
-                            <div class="metric">
-                                <span class="metric-value">11</span>
-                                <span class="metric-label">Microservices</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">166</span>
-                                <span class="metric-label">Prometheus Metrics</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">SPC</span>
-                                <span class="metric-label">Drift Detection</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">10/10</span>
-                                <span class="metric-label">E2E Tests</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tech-stack">AWS ECS Fargate • Apache Kafka • FastAPI • React • Terraform • PEFT •
-                        MLflow • Prometheus • Grafana • PostgreSQL</div>
-                </div>
-
                 <!-- Tennis Vision -->
                 <div class="project-detailed">
                     <div class="project-header">
@@ -164,6 +98,78 @@
                     </div>
 
                     <div class="tech-stack">PyTorch • OpenCV • YOLOv8 • Supervision • ResNet-50</div>
+                </div>
+
+                <!-- Continuum -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/continuum" target="_blank">Continuum</a></h3>
+                        <div class="project-meta">
+                            <span class="year">2026</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Production LLMOps platform for monitoring LLM quality and detecting
+                        behavioural drift in deployed models. 11-microservice event-driven architecture on AWS ECS
+                        Fargate, Apache Kafka trace pipeline, multi-dimensional quality scoring with a Claude
+                        LLM-judge, and Statistical Process Control for drift detection. Designed self-healing LoRA
+                        fine-tuning loop with A/B canary deployment.</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/continuum/main/images/dashboard/overview.png"
+                            alt="Continuum Dashboard Overview">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/continuum/main/images/dashboard/quality_panel.png"
+                            alt="Continuum Quality Panel">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/continuum/main/images/cloud_services/ecs_tasks_fargate.png"
+                            alt="Continuum ECS Fargate Services">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>Architecture</h4>
+                        <ul>
+                            <li><strong>Event-Driven Pipeline:</strong> Apache Kafka (KRaft mode, 10 topics) captures
+                                every production LLM trace in real time; 11 microservices on AWS ECS Fargate handle
+                                ingestion, scoring, storage, alerting, and orchestration</li>
+                            <li><strong>Quality Scoring:</strong> Multi-dimensional scorer combining Claude LLM-judge +
+                                ROUGE/BLEU + semantic similarity; each response gets a composite score per trace</li>
+                            <li><strong>Drift Detection:</strong> Statistical Process Control (Western Electric rules)
+                                applied to quality score time-series; alerts fire when the distribution shifts beyond
+                                control limits</li>
+                            <li><strong>Self-Healing Loop:</strong> Designed LoRA fine-tuning orchestration to
+                                automatically remediate detected drift with A/B canary deployment; full Terraform IaC</li>
+                            <li><strong>Observability:</strong> 166 Prometheus metric series, Grafana dashboards,
+                                authenticated REST API, React/TypeScript frontend</li>
+                        </ul>
+
+                        <h4>Results</h4>
+                        <ul>
+                            <li>Verified end-to-end trace flow: Kafka → scoring → PostgreSQL → alerting</li>
+                            <li>10/10 passing E2E tests; 166 Prometheus metric series across all services</li>
+                            <li>Full Terraform IaC + GitHub Actions CI/CD</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">11</span>
+                                <span class="metric-label">Microservices</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">166</span>
+                                <span class="metric-label">Prometheus Metrics</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">SPC</span>
+                                <span class="metric-label">Drift Detection</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">10/10</span>
+                                <span class="metric-label">E2E Tests</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">AWS ECS Fargate • Apache Kafka • FastAPI • React • Terraform • PEFT •
+                        MLflow • Prometheus • Grafana • PostgreSQL</div>
                 </div>
 
                 <!-- rPPG Heart Rate -->
@@ -293,6 +299,68 @@
 
                     <div class="tech-stack">LangGraph • GPT-4 • Next.js 14 • TypeScript • Tavily API • Tailwind CSS
                     </div>
+                </div>
+
+                <!-- Parallax -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/parallax" target="_blank">Parallax</a></h3>
+                        <div class="project-meta">
+                            <span class="year">2026</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Self-organizing AI/ML knowledge graph and personal wiki. 38
+                        interlinked pages across projects, research implementations, skills, and concepts — connected
+                        by a D3.js force-directed graph (33 nodes, 155 edges). Includes full-text search via command
+                        palette, per-page confidence scoring, and an MCP server exposing 5 callable tools so AI
+                        assistants can query the knowledge base directly.</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/parallax/main/images/spa-home.png"
+                            alt="Parallax Wiki Home">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/parallax/main/images/spa-graph.png"
+                            alt="Parallax Knowledge Graph">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/parallax/main/images/spa-search.png"
+                            alt="Parallax Command Palette Search">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>Features</h4>
+                        <ul>
+                            <li><strong>Knowledge Graph:</strong> D3.js force-directed graph with 33 nodes and 155
+                                edges, color-coded by domain (CV, GenAI, MLOps, agents, fundamentals)</li>
+                            <li><strong>MCP Server:</strong> 5 callable tools (search_wiki, get_page, get_related,
+                                get_summary, list_pages) — AI assistants can query the wiki directly over MCP</li>
+                            <li><strong>Search:</strong> Full-text command palette search with keyword highlighting
+                                and semantic search across all 38 pages</li>
+                            <li><strong>Confidence Scoring:</strong> Each page has a 0.0–1.0 confidence badge
+                                reflecting depth of understanding, not just presence of content</li>
+                            <li><strong>CI Automation:</strong> Weekly GitHub Actions workflow detects stale metrics
+                                and orphaned pages automatically</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">38</span>
+                                <span class="metric-label">Wiki Pages</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">155</span>
+                                <span class="metric-label">Graph Edges</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">5</span>
+                                <span class="metric-label">MCP Tools</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">CI</span>
+                                <span class="metric-label">Auto-Maintenance</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">Python • JavaScript • D3.js • MCP Server • GitHub Pages • GitHub Actions</div>
                 </div>
 
                 <!-- MoleCuQuest -->
