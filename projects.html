@@ -26,6 +26,72 @@
                 <p class="section-desc">Real projects I've built to solve interesting problems — not just tutorials,
                     actually working systems</p>
 
+                <!-- Continuum -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/continuum" target="_blank">Continuum</a></h3>
+                        <div class="project-meta">
+                            <span class="year">2026</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Production LLMOps platform for monitoring LLM quality and detecting
+                        behavioural drift before it becomes a problem. 11-microservice event-driven architecture on AWS
+                        ECS Fargate, Apache Kafka trace pipeline, multi-dimensional quality scoring, and Statistical
+                        Process Control for drift detection. Designed self-healing LoRA fine-tuning loop with A/B
+                        canary deployment.</p>
+
+                    <div class="tech-details">
+                        <h4>Architecture</h4>
+                        <ul>
+                            <li><strong>Event-Driven Pipeline:</strong> Apache Kafka (KRaft mode, 10 topics) captures
+                                every production LLM trace in real time; 11 microservices on AWS ECS Fargate handle
+                                ingestion, scoring, storage, alerting, and orchestration</li>
+                            <li><strong>Quality Scoring:</strong> Multi-dimensional scorer combining Claude LLM-judge +
+                                ROUGE/BLEU metrics + semantic similarity; each response gets a composite quality
+                                score</li>
+                            <li><strong>Drift Detection:</strong> Statistical Process Control with Western Electric
+                                rules applied to quality score time-series; alerts trigger when the score distribution
+                                shifts beyond expected control limits</li>
+                            <li><strong>Self-Healing Loop:</strong> Designed LoRA fine-tuning orchestration to
+                                automatically remediate detected drift with A/B canary deployment; Terraform IaC for
+                                full infrastructure reproducibility</li>
+                            <li><strong>Observability:</strong> 166 Prometheus metric series, Grafana dashboards,
+                                authenticated REST API, React/TypeScript frontend</li>
+                        </ul>
+
+                        <h4>Key Results</h4>
+                        <ul>
+                            <li>Verified end-to-end trace flow: Kafka → quality scoring → PostgreSQL → alerting</li>
+                            <li>166 Prometheus metric series covering all microservices</li>
+                            <li>10/10 passing E2E tests across the full pipeline</li>
+                            <li>Full Terraform IaC + GitHub Actions CI/CD</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">11</span>
+                                <span class="metric-label">Microservices</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">166</span>
+                                <span class="metric-label">Prometheus Metrics</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">SPC</span>
+                                <span class="metric-label">Drift Detection</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">10/10</span>
+                                <span class="metric-label">E2E Tests</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">AWS ECS Fargate • Apache Kafka • FastAPI • React • Terraform • PEFT •
+                        MLflow • Prometheus • Grafana • PostgreSQL</div>
+                </div>
+
                 <!-- Tennis Vision -->
                 <div class="project-detailed">
                     <div class="project-header">
@@ -34,7 +100,7 @@
                                 class="demo-link">Live Demo</a>
                         </h3>
                         <div class="project-meta">
-                            <span class="stars">⭐ 34</span>
+                            <span class="stars">⭐ 37</span>
                             <span class="year">2025</span>
                         </div>
                     </div>
