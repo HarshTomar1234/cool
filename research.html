@@ -15,7 +15,7 @@
         <nav class="main-nav">
             <a href="index.html" class="nav-link">Home</a>
             <a href="projects.html" class="nav-link">Projects</a>
-            <a href="research.html" class="nav-link active">Research</a>
+            <a href="research.html" class="nav-link active">Research Paper Implementation</a>
             <a href="blogs.html" class="nav-link">Blogs</a>
             <a href="more.html" class="nav-link">More</a>
         </nav>
@@ -25,6 +25,68 @@
                 <h2>Research Paper Implementations</h2>
                 <p class="section-desc">From-scratch PyTorch implementations of cutting-edge AI research papers with
                     detailed architectural breakdowns</p>
+
+                <!-- Transformers-CV -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/transformers-cv" target="_blank">Transformers-CV:
+                                Ten Architectures From Scratch</a></h3>
+                        <div class="project-meta">
+                            <span class="year">173 commits, ongoing</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">An active, continuously growing deep dive reimplementing vision and
+                        multimodal transformer architectures from their original papers in pure PyTorch: ViT, DETR,
+                        Swin Transformer, SAM, TimeSformer, Flamingo, DDPM, JEPA, VAE/VQ-VAE, and GANs. Built to
+                        understand the internals well enough to explain and extend them, not just call an API.</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/transformers-cv/main/ViT/imgs/patch_embeddings.png"
+                            alt="ViT Patch Embeddings">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/transformers-cv/main/ViT/imgs/mha.png"
+                            alt="ViT Multi-Head Attention">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/transformers-cv/main/DETR/architecture_diagrams/DETR%20architecture%20overview.png"
+                            alt="DETR Architecture Overview">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/transformers-cv/main/Diffusion/DDPM/images/DDPM.jpg"
+                            alt="DDPM Diffusion Process">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>Architectures Implemented</h4>
+                        <ul>
+                            <li><strong>Recognition & Detection:</strong> ViT (patch embeddings, multi-head
+                                self-attention), Swin Transformer (hierarchical windows), DETR (set prediction,
+                                Hungarian matching)</li>
+                            <li><strong>Segmentation & Video:</strong> SAM (Segment Anything), TimeSformer
+                                (space-time attention for video)</li>
+                            <li><strong>Multimodal & Generative:</strong> Flamingo VLM, DDPM (denoising diffusion),
+                                JEPA (joint-embedding predictive architecture), VAE/VQ-VAE, GANs</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">10</span>
+                                <span class="metric-label">Architectures</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">173+</span>
+                                <span class="metric-label">Commits</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2024–Present</span>
+                                <span class="metric-label">Actively Maintained</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Pure PyTorch</span>
+                                <span class="metric-label">No High-Level Wrappers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">PyTorch • ViT • DETR • Swin Transformer • SAM • TimeSformer • Flamingo •
+                        DDPM • JEPA • VAE/VQ-VAE • GANs • From Scratch</div>
+                </div>
 
                 <!-- VLMverse -->
                 <div class="project-detailed">
@@ -276,6 +338,7 @@
 
                     <div class="tech-stack">PyTorch • Reasoning • LLMs • Reinforcement Learning • Chain-of-Thought •
                         Llama 3.2</div>
+                </div>
             </section>
         </main>
 

@@ -767,6 +767,7 @@ footer a:hover {
 /* Navigation Bar */
 .main-nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     padding: 1rem 0;
