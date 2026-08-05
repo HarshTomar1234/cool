@@ -26,6 +26,85 @@
                 <p class="section-desc">Real projects I've built to solve interesting problems — not just tutorials,
                     actually working systems</p>
 
+                <!-- OncoRAG -->
+                <div class="project-detailed">
+                    <div class="project-header">
+                        <h3><a href="https://github.com/HarshTomar1234/OncoRAG" target="_blank">OncoRAG</a>
+                            <a href="https://oncorag.onrender.com/" target="_blank"
+                                class="demo-link">Live Demo</a>
+                        </h3>
+                        <div class="project-meta">
+                            <span class="year">2026</span>
+                        </div>
+                    </div>
+
+                    <p class="project-summary">Production RAG + agentic oncology knowledge system on Weaviate hybrid
+                        search, grounded in real CIViC, ClinicalTrials.gov, and openFDA data across five cancer types.
+                        A transparent, citation-backed Claude Sonnet 5 agent exposes its full search trace and sources
+                        for every answer — empirically tuned, grounding-evaluated, and adversarially red-teamed
+                        rather than left at library defaults.</p>
+
+                    <div class="project-images-grid">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/OncoRAG/main/images/app-screenshot.png"
+                            alt="OncoRAG Chat Interface">
+                        <img src="https://raw.githubusercontent.com/HarshTomar1234/OncoRAG/main/images/example-answer.png"
+                            alt="OncoRAG Answer with Citations and Reasoning Trace">
+                    </div>
+
+                    <div class="tech-details">
+                        <h4>Technical Implementation</h4>
+                        <ul>
+                            <li><strong>Retrieval:</strong> Single Weaviate KnowledgeObject collection (the free
+                                tier's one-collection cap forced an object_type discriminator over
+                                cancer/gene/drug/evidence_item/clinical_trial/drug_label) with hybrid search tuned via
+                                paired bootstrap to alpha 0.75 with relative-score fusion</li>
+                            <li><strong>Agent:</strong> Hand-rolled tool-use loop rather than Anthropic's Tool Runner,
+                                so every search call and citation stays traceable end-to-end for the UI's reasoning
+                                trace view</li>
+                            <li><strong>Data Ingestion:</strong> CIViC, ClinicalTrials.gov, and openFDA clients
+                                feeding a chunking pipeline into the vector index</li>
+                            <li><strong>Serving:</strong> FastAPI (/chat, /health, /examples) with per-IP rate
+                                limiting (20 questions/day) and an admin bearer-token bypass for eval and red-team
+                                scripts</li>
+                            <li><strong>Rejected optimization:</strong> cross-encoder reranking was built and
+                                measured, then shipped as an opt-in extra — it hurt retrieval quality and added 4.46s
+                                of latency per query</li>
+                        </ul>
+
+                        <h4>Evaluation</h4>
+                        <ul>
+                            <li>Hybrid search alpha/fusion swept and validated against a hand-verified golden eval
+                                set (a first version was found circular and rebuilt before any tuning ran)</li>
+                            <li>Agent eval: 28/28 tool-call rate, 28/28 grounding-clean, 25/28 citation ID-match</li>
+                            <li>Red-team: 10/10 held against jailbreaks, system-prompt extraction, social-pressure
+                                grounding bypass, and misinformation — run against the live deployed agent over real
+                                HTTP</li>
+                        </ul>
+
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">28/28</span>
+                                <span class="metric-label">Grounding Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">25/28</span>
+                                <span class="metric-label">Citation ID Match</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">10/10</span>
+                                <span class="metric-label">Red-Team Held</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">5</span>
+                                <span class="metric-label">Cancer Types Covered</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">Weaviate • Claude Sonnet 5 • FastAPI • Docker • Hybrid Search • RAG •
+                        Agentic Tool-Use</div>
+                </div>
+
                 <!-- Tennis Vision -->
                 <div class="project-detailed">
                     <div class="project-header">
