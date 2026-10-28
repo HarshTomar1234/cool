@@ -110,11 +110,70 @@ h1 {
 .resume-link {
     background-color: #ed64a6 !important;
     color: white !important;
+    cursor: pointer;
 }
 
 .resume-link:hover {
     background-color: #d53f8c !important;
     color: white !important;
+}
+
+.resume-picker {
+    position: relative;
+    display: inline-block;
+}
+
+.resume-picker summary {
+    list-style: none;
+}
+
+.resume-picker summary::-webkit-details-marker {
+    display: none;
+}
+
+.resume-menu {
+    position: absolute;
+    top: calc(100% + 0.55rem);
+    right: 0;
+    z-index: 10;
+    min-width: 245px;
+    padding: 0.45rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.14);
+    text-align: left;
+}
+
+.resume-menu a {
+    display: block;
+    padding: 0.65rem 0.75rem;
+    border-radius: 5px;
+    color: #2d3748;
+    font-size: 0.82rem;
+    line-height: 1.25;
+    text-decoration: none;
+}
+
+.resume-menu a:hover,
+.resume-menu a:focus-visible {
+    background: #f7fafc;
+    color: #1a202c;
+    outline: none;
+}
+
+.resume-menu span {
+    display: block;
+    margin-top: 0.2rem;
+    color: #718096;
+    font-size: 0.7rem;
+}
+
+@media (max-width: 560px) {
+    .resume-menu {
+        right: auto;
+        left: 0;
+    }
 }
 
 /* Main Content */
